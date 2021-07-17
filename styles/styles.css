@@ -1,1 +1,24 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.fff-bg-hellgruen {
+  background-color: #1da64a;
+}
+
+.fff-bg-dunkelgruen {
+  background-color: #1b7340;
+}
+
+.fff-bg-hamburg-gruen {
+  background-color: #549670;
+}
+
+.fff-bg-blau {
+  background-color: #90d3ed;
+}
+
+.fff-bg-rot {
+  background-color: #f5333f;
+}
+
+:root {
+  font-family: Jost sans-serif;
+}
+/*# sourceMappingURL=styles.css.map */

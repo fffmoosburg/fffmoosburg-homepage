@@ -1,0 +1,29 @@
+$fff-hellgruen     : rgb(29, 166, 74);
+$fff-dunkelgruen   : rgb(27, 115, 64);
+$fff-hamburg-gruen : rgb(84, 150, 112);
+$fff-blau          : rgb(144, 211, 237);
+$fff-rot           : rgb(245, 51, 63);
+
+.fff-bg-hellgruen {
+    background-color: $fff-hellgruen;
+}
+
+.fff-bg-dunkelgruen {
+    background-color: $fff-dunkelgruen;
+}
+
+.fff-bg-hamburg-gruen {
+    background-color: $fff-hamburg-gruen;
+}
+
+.fff-bg-blau {
+    background-color: $fff-blau;
+}
+
+.fff-bg-rot {
+    background-color: $fff-rot;
+}
+
+:root {
+    font-family: Jost sans-serif;
+}
