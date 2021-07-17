@@ -11,19 +11,64 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="img/favicon/favicon.png" type="image/png">
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon48x.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon192x.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="favicon167x.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="favicon-180x180.png">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
     <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav></nav>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fff-bg-dunkelgruen">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="img/logotransparent.png" style="height: 4em; width: 4em; margin: 0 0 0 0; padding: 0 0 0 0;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <header></header>
+    <header>
+
+    </header>
 
     <main></main>
 
@@ -38,7 +83,6 @@
             kommerziell - Keine Bearbeitungen 4.0 International Lizenz
         </a>.
     </footer>
-
 
     <script src="" async defer></script>
 </body>
