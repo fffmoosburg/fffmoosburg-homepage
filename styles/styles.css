@@ -1,3 +1,8 @@
+@font-face {
+  font-family: Jost;
+  src: url("/fonts/Jost ohne Sternchen/Jost-VariableFont_wght.ttf");
+}
+
 .fff-bg-hellgruen {
   background-color: #1da64a;
 }
@@ -18,7 +23,99 @@
   background-color: #f5333f;
 }
 
-:root {
-  font-family: Jost sans-serif;
+.fff-hellgruen {
+  color: #1da64a;
+}
+
+.fff-dunkelgruen {
+  color: #1b7340;
+}
+
+.fff-hamburg-gruen {
+  color: #549670;
+}
+
+.fff-blau {
+  color: #90d3ed;
+}
+
+.fff-rot {
+  color: #f5333f;
+}
+
+body {
+  font-family: Jost;
+  font-weight: 400;
+}
+
+body ::-moz-selection {
+  background-color: #1b7340;
+  color: #fff;
+}
+
+body ::selection {
+  background-color: #1b7340;
+  color: #fff;
+}
+
+main a,
+footer a {
+  color: #90d3ed !important;
+}
+
+p {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 0.25em;
+}
+
+.dropdown-item.active {
+  background-color: #1b7340;
+}
+
+.dropown-item:active {
+  background-color: #1b7340;
+}
+
+header {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+header h1 h2 {
+  font-weight: bold;
+}
+
+main section:first-of-type {
+  padding-top: 8em;
+  padding-bottom: 4em;
+}
+
+main section:last-of-type {
+  padding-top: 4em;
+  padding-bottom: 8em;
+}
+
+.main-section {
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+footer {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 /*# sourceMappingURL=styles.css.map */

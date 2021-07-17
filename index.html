@@ -3,12 +3,12 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="de">
+<html lang="de" class="bg-dark">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Fridays For Future Moosburg</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
@@ -23,14 +23,16 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="150" class="bg-light" data-offset="150">
     <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fff-bg-dunkelgruen">
+    <div id="top" class="visually-hidden"></div>
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-dark fff-bg-dunkelgruen sticky-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="img/logotransparent.png" style="height: 4em; width: 4em; margin: 0 0 0 0; padding: 0 0 0 0;">
+            <a class="navbar-brand" href="#top">
+                <img src="img/logotransparent.png" style="height: 4em; width: 4em; margin: 0 0 0 0; padding: 0 0 0 0;"
+                    alt="Logo der Fridays For Future Ortsgruppe Moosburg">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -40,49 +42,164 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link" aria-current="page" href="#top">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#ueber-uns">Über uns</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle" href="#ziele" id="navbarDropdown" role="button"
                             data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
+                            Ziele
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#ziel1">Ziel 1</a></li>
+                            <li><a class="dropdown-item" href="#ziel2">Ziel 2</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#nocheinziel">Noch ein Ziel</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#aktionen" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Aktionen
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <div class="dropdown-header">Kommender Streik</div>
+                            </li>
+                            <li><a class="dropdown-item" href="#kommender-streik">24.09 #AlleFürsKlima</a></li>
+                            <li class="visually-hidden">
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="visually-hidden">
+                                <div class="dropdown-header">Vergangene Streiks</div>
+                            </li>
+                            <li class="visually-hidden"><a class="dropdown-item" href="#vergangene-streiks">Datum
+                                    #Streikhashtag</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="dropdown-header">Sonstige</div>
+                            </li>
+                            <li><a class="dropdown-item" href="#sonstige-aktionen">Sprühkreideaktion</a></li>
+                        </ul>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>-->
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header>
-
+    <header class="fff-bg-blau">
+        <div class="container">
+            <div class="text-center">
+                <h1>Fridays For Future</h1>
+                <h2>Ortsgruppe Moosburg</h2>
+            </div>
+        </div>
     </header>
 
-    <main></main>
+    <main>
+        <section id="ueber-uns" class="main-section">
+            <div class="container">
+                <h2>Über Uns</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla fugit delectus, perspiciatis adipisci
+                    quia facere numquam nihil hic architecto, officiis aperiam? Voluptate vitae aperiam corporis
+                    nesciunt? Odit perferendis, fugiat non nesciunt repellat omnis! Adipisci, dicta. Aperiam accusantium
+                    exercitationem quae vel facere modi aut, veritatis optio molestiae laboriosam tempora iure
+                    recusandae distinctio! Obcaecati error ea ad aliquid iste, quidem totam cumque minima doloremque in
+                    corrupti, fugiat porro dicta nisi temporibus corporis et. Quibusdam, voluptate! Saepe ratione ullam
+                    sunt eius ab recusandae adipisci consequuntur voluptate, et facere voluptatum necessitatibus
+                    quisquam voluptatem reiciendis quaerat nobis, totam placeat possimus! Quae perferendis ratione eos
+                    modi.</p>
+            </div>
+        </section>
 
-    <footer>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-            <img alt="Creative Commons Lizenzvertrag" style="border-width:0"
-                src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
-        </a>
-        <br />
-        Diese Website ist lizenziert unter einer
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Namensnennung - Nicht
-            kommerziell - Keine Bearbeitungen 4.0 International Lizenz
-        </a>.
+        <section id="ziele" class="main-section">
+            <div class="container">
+                <h2>Ziele</h2>
+                <div id="ziel1">
+                    <h3>Ziel 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum explicabo! Repellendus
+                        vitae velit nesciunt fuga non quae quisquam consequatur omnis debitis excepturi ratione,
+                        reprehenderit maxime aliquam neque voluptatum dicta ut! Magni, quis animi consequatur deserunt
+                        eaque tempora quia dolore praesentium rem consectetur maiores voluptatem hic totam at
+                        perspiciatis est?</p>
+                </div>
+                <div id="ziel2">
+                    <h3>Ziel 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum explicabo! Repellendus
+                        vitae velit nesciunt fuga non quae quisquam consequatur omnis debitis excepturi ratione,
+                        reprehenderit maxime aliquam neque voluptatum dicta ut! Magni, quis animi consequatur deserunt
+                        eaque tempora quia dolore praesentium rem consectetur maiores voluptatem hic totam at
+                        perspiciatis est?</p>
+                </div>
+                <div id="nocheinziel">
+                    <h3>Noch ein Ziel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum explicabo! Repellendus
+                        vitae velit nesciunt fuga non quae quisquam consequatur omnis debitis excepturi ratione,
+                        reprehenderit maxime aliquam neque voluptatum dicta ut! Magni, quis animi consequatur deserunt
+                        eaque tempora quia dolore praesentium rem consectetur maiores voluptatem hic totam at
+                        perspiciatis est?</p>
+                </div>
+            </div>
+        </section>
+        <section id="aktionen" class="main-section">
+            <div class="container">
+                <h2>Aktionen</h2>
+                <div id="kommender-streik">
+                    <h3>24.09 #AlleFürsKlima</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos error assumenda ipsum
+                        exercitationem minus sunt officia dicta delectus quod facere alias facilis possimus accusantium
+                        eum esse hic fuga vitae ducimus aut, consequuntur illum illo aperiam! Recusandae asperiores,
+                        illum alias ipsam earum sapiente minima eos, nostrum mollitia amet repellat. Dolores voluptatem
+                        numquam non libero eveniet atque praesentium sint quis velit dicta? Deserunt, ratione sunt
+                        fugiat maxime alias repellat dolore, impedit similique cum fugit error rerum explicabo officia
+                        velit quos veritatis quasi? Velit, consequuntur officiis! Vitae, accusantium temporibus. Omnis
+                        maxime neque ex odit praesentium, amet voluptate porro adipisci deleniti, ut velit quibusdam
+                        tempore tenetur obcaecati voluptatem. Dicta beatae, accusamus nihil quae architecto hic eum
+                        quisquam magnam exercitationem? Numquam ratione illum aut voluptate, quas soluta iusto fugiat
+                        animi.</p>
+                </div>
+                <div id="vergangene-streiks" class="visually-hidden">
+                    <h3>Datum #StreikHashtag</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur mollitia quasi minus
+                        voluptatem ad distinctio obcaecati accusantium dolorem minima aliquid nobis, ratione vero? Neque
+                        quis asperiores vel ex soluta molestias adipisci quia aut ab rerum iure dolorum debitis at
+                        reprehenderit, nostrum esse nesciunt inventore atque sint, deserunt facere, ea doloremque!</p>
+                </div>
+                <div id="sonstige-aktionen">
+                    <h3>Sprühkreideaktion</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi incidunt laborum, veniam
+                        consequatur minus eos rem quasi? Molestias enim possimus magnam quia natus nesciunt eligendi
+                        accusamus dolore blanditiis nihil, assumenda placeat iusto officia sed deserunt quae,
+                        repellendus temporibus quaerat exercitationem cum recusandae! In totam itaque veniam explicabo
+                        quos laborum doloribus sed sit voluptate accusantium, dicta ullam! Exercitationem neque vitae
+                        explicabo accusamus dignissimos!</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-light bg-dark">
+        <div class="container-fluid">
+            <div class="license text-center">
+                <!--<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
+                    <img alt="Creative Commons Lizenzvertrag" style="border-width:0"
+                            src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+                </a>
+                <br />-->
+                Diese Website ist lizenziert unter einer
+                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons BY-NC-ND 4.0 International
+                    Lizenz</a>.
+            </div>
+        </div>
     </footer>
 
     <script src="" async defer></script>
