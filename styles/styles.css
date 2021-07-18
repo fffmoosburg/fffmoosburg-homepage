@@ -44,6 +44,7 @@
 }
 
 body {
+  position: relative;
   font-family: Jost;
   font-weight: 400;
 }
@@ -56,6 +57,12 @@ body ::-moz-selection {
 body ::selection {
   background-color: #1b7340;
   color: #fff;
+}
+
+.anchor {
+  top: -80px;
+  position: relative;
+  display: block;
 }
 
 main a,
@@ -82,11 +89,8 @@ h3 {
   margin-bottom: 0.25em;
 }
 
-.dropdown-item.active {
-  background-color: #1b7340;
-}
-
-.dropown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   background-color: #1b7340;
 }
 
@@ -100,22 +104,32 @@ header h1 h2 {
 }
 
 main section:first-of-type {
-  padding-top: 8em;
-  padding-bottom: 4em;
+  padding-top: 7em;
+  padding-bottom: 2em;
 }
 
 main section:last-of-type {
-  padding-top: 4em;
-  padding-bottom: 8em;
-}
-
-.main-section {
-  padding-top: 4em;
+  padding-top: 2em;
   padding-bottom: 4em;
 }
 
-footer {
+.main-section {
   padding-top: 2em;
   padding-bottom: 2em;
+}
+
+.main-section .inner-container {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.main-section .inner-container:last-of-type {
+  padding-top: 1.5em;
+  padding-bottom: 0em;
+}
+
+footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="150" class="bg-light" data-offset="150">
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="25" data-bs-method="auto" class="bg-light">
     <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -32,7 +32,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#top">
                 <img src="img/logotransparent.png" style="height: 4em; width: 4em; margin: 0 0 0 0; padding: 0 0 0 0;"
-                    alt="Logo der Fridays For Future Ortsgruppe Moosburg">
+                    class="navbar-img" alt="Logo der Fridays For Future Ortsgruppe Moosburg">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -106,7 +106,8 @@
     </header>
 
     <main>
-        <section id="ueber-uns" class="main-section">
+        <a class="anchor" id="ueber-uns"></a>
+        <section class="main-section">
             <div class="container">
                 <h2>Über Uns</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla fugit delectus, perspiciatis adipisci
@@ -121,39 +122,54 @@
             </div>
         </section>
 
-        <section id="ziele" class="main-section">
+        <a class="anchor" id="ziele"></a>
+        <section class="main-section">
             <div class="container">
                 <h2>Ziele</h2>
-                <div id="ziel1">
-                    <h3>Ziel 1</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum explicabo! Repellendus
-                        vitae velit nesciunt fuga non quae quisquam consequatur omnis debitis excepturi ratione,
-                        reprehenderit maxime aliquam neque voluptatum dicta ut! Magni, quis animi consequatur deserunt
-                        eaque tempora quia dolore praesentium rem consectetur maiores voluptatem hic totam at
-                        perspiciatis est?</p>
-                </div>
-                <div id="ziel2">
-                    <h3>Ziel 2</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum explicabo! Repellendus
-                        vitae velit nesciunt fuga non quae quisquam consequatur omnis debitis excepturi ratione,
-                        reprehenderit maxime aliquam neque voluptatum dicta ut! Magni, quis animi consequatur deserunt
-                        eaque tempora quia dolore praesentium rem consectetur maiores voluptatem hic totam at
-                        perspiciatis est?</p>
-                </div>
-                <div id="nocheinziel">
-                    <h3>Noch ein Ziel</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum explicabo! Repellendus
-                        vitae velit nesciunt fuga non quae quisquam consequatur omnis debitis excepturi ratione,
-                        reprehenderit maxime aliquam neque voluptatum dicta ut! Magni, quis animi consequatur deserunt
-                        eaque tempora quia dolore praesentium rem consectetur maiores voluptatem hic totam at
-                        perspiciatis est?</p>
+                <a class="anchor" id="ziel"></a>
+                <div class="ziele-container">
+                    <a class="anchor" id="ziel1"></a>
+                    <div class="inner-container">
+                        <h3>Ziel 1</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum explicabo!
+                            Repellendus
+                            vitae velit nesciunt fuga non quae quisquam consequatur omnis debitis excepturi ratione,
+                            reprehenderit maxime aliquam neque voluptatum dicta ut! Magni, quis animi consequatur
+                            deserunt
+                            eaque tempora quia dolore praesentium rem consectetur maiores voluptatem hic totam at
+                            perspiciatis est?</p>
+                    </div>
+                    <a class="anchor" id="ziel2"></a>
+                    <div class="inner-container">
+                        <h3>Ziel 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum explicabo!
+                            Repellendus
+                            vitae velit nesciunt fuga non quae quisquam consequatur omnis debitis excepturi ratione,
+                            reprehenderit maxime aliquam neque voluptatum dicta ut! Magni, quis animi consequatur
+                            deserunt
+                            eaque tempora quia dolore praesentium rem consectetur maiores voluptatem hic totam at
+                            perspiciatis est?</p>
+                    </div>
+                    <a class="anchor" id="nocheinziel"></a>
+                    <div class="inner-container">
+                        <h3>Noch ein Ziel</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, dolorum explicabo!
+                            Repellendus
+                            vitae velit nesciunt fuga non quae quisquam consequatur omnis debitis excepturi ratione,
+                            reprehenderit maxime aliquam neque voluptatum dicta ut! Magni, quis animi consequatur
+                            deserunt
+                            eaque tempora quia dolore praesentium rem consectetur maiores voluptatem hic totam at
+                            perspiciatis est?</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="aktionen" class="main-section">
+        <a class="anchor" id="aktionen"></a>
+        <section class="main-section">
             <div class="container">
                 <h2>Aktionen</h2>
-                <div id="kommender-streik">
+                <a class="anchor" id="kommender-streik"></a>
+                <div class="inner-container">
                     <h3>24.09 #AlleFürsKlima</h3>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos error assumenda ipsum
                         exercitationem minus sunt officia dicta delectus quod facere alias facilis possimus accusantium
@@ -167,14 +183,16 @@
                         quisquam magnam exercitationem? Numquam ratione illum aut voluptate, quas soluta iusto fugiat
                         animi.</p>
                 </div>
-                <div id="vergangene-streiks" class="visually-hidden">
+                <a class="anchor" id="vergangene-streiks"></a>
+                <div class="visually-hidden inner-container">
                     <h3>Datum #StreikHashtag</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur mollitia quasi minus
                         voluptatem ad distinctio obcaecati accusantium dolorem minima aliquid nobis, ratione vero? Neque
                         quis asperiores vel ex soluta molestias adipisci quia aut ab rerum iure dolorum debitis at
                         reprehenderit, nostrum esse nesciunt inventore atque sint, deserunt facere, ea doloremque!</p>
                 </div>
-                <div id="sonstige-aktionen">
+                <a class="anchor" id="sonstige-aktionen"></a>
+                <div class="inner-container">
                     <h3>Sprühkreideaktion</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem modi incidunt laborum, veniam
                         consequatur minus eos rem quasi? Molestias enim possimus magnam quia natus nesciunt eligendi
@@ -190,19 +208,36 @@
     <footer class="text-light bg-dark">
         <div class="container-fluid">
             <div class="license text-center">
-                <!--<a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-                    <img alt="Creative Commons Lizenzvertrag" style="border-width:0"
-                            src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
+                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.de">
+                    <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="img/license/88x31-e.png" />
                 </a>
-                <br />-->
+                <br />
                 Diese Website ist lizenziert unter einer
-                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons BY-NC-ND 4.0 International
+                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.de">Creative Commons BY-NC-ND 4.0
+                    International
                     Lizenz</a>.
             </div>
         </div>
     </footer>
 
     <script src="" async defer></script>
+
+    <script>
+        $(document).on("scroll", function (e) {
+            var size = 32 / $(document).scrollTop() * 8;
+            var endsize = 4;
+            if (size <= 2) {
+                endsize = 2;
+            }
+            else if (size >= 4) {
+                endsize = 4;
+            } else if (size > 2) {
+                endsize = size;
+            }
+            $(".navbar-img").css("width", endsize + "em");
+            $(".navbar-img").css("height", endsize + "em");
+        });
+    </script>
 </body>
 
 </html>

@@ -52,6 +52,8 @@ $fff-rot           : rgb(245, 51, 63);
 
 
 body {
+    position: relative;
+
     font-family: Jost;
     font-weight: 400;
 
@@ -59,6 +61,12 @@ body {
         background-color: $fff-dunkelgruen;
         color           : #fff;
     }
+}
+
+.anchor {
+    top     : -80px;
+    position: relative;
+    display : block;
 }
 
 main,
@@ -87,11 +95,8 @@ h3 {
     margin-bottom: 0.25em;
 }
 
-.dropdown-item.active {
-    background-color: $fff-dunkelgruen;
-}
-
-.dropown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
     background-color: $fff-dunkelgruen;
 }
 
@@ -106,22 +111,32 @@ header {
 
 main {
     section:first-of-type {
-        padding-top   : 8em;
-        padding-bottom: 4em;
+        padding-top   : 7em;
+        padding-bottom: 2em;
     }
 
     section:last-of-type {
-        padding-top   : 4em;
-        padding-bottom: 8em;
+        padding-top   : 2em;
+        padding-bottom: 4em;
     }
 }
 
 .main-section {
-    padding-top   : 4em;
-    padding-bottom: 4em;
+    padding-top   : 2em;
+    padding-bottom: 2em;
+
+    .inner-container {
+        padding-top   : 1.5em;
+        padding-bottom: 1.5em;
+    }
+
+    .inner-container:last-of-type {
+        padding-top   : 1.5em;
+        padding-bottom: 0em;
+    }
 }
 
 footer {
-    padding-top   : 2em;
-    padding-bottom: 2em;
+    padding-top   : 1.5em;
+    padding-bottom: 1.5em;
 }
