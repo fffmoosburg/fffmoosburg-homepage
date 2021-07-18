@@ -59,15 +59,20 @@ body {
 }
 
 .anchor {
-    top     : -80px;
+    top     : -75px;
     position: relative;
     display : block;
 }
 
-main,
 footer {
     a {
         color: $fff-blau !important;
+    }
+}
+
+main {
+    a {
+        color: hsl(197, 68%, 31%);
     }
 }
 
@@ -96,8 +101,9 @@ h3 {
 }
 
 header {
-    padding-top   : 4em;
-    padding-bottom: 4em;
+    padding-top   : 2.5em;
+    padding-bottom: 2.5em;
+    margin-bottom : 0.5em;
 
     h1 h2 {
         font-weight: bold;
@@ -106,28 +112,46 @@ header {
 
 main {
     section:first-of-type {
-        padding-top   : 7em;
-        padding-bottom: 2em;
+        padding-top   : 4em;
+        padding-bottom: 1.5em;
     }
 
     section:last-of-type {
-        padding-top   : 2em;
+        padding-top   : 1.5em;
         padding-bottom: 4em;
     }
 }
 
 .main-section {
-    padding-top   : 2em;
-    padding-bottom: 2em;
+    padding-top   : 1.5em;
+    padding-bottom: 1.5em;
 
     .inner-container {
-        padding-top   : 1.5em;
-        padding-bottom: 1.5em;
+        padding-top   : 0.5em;
+        padding-bottom: 0.5em;
     }
 
     .inner-container:last-of-type {
-        padding-top   : 1.5em;
+        padding-top   : 0.5em;
         padding-bottom: 0em;
+    }
+}
+
+.inline-social-logo {
+    margin-left : 4px;
+    margin-right: 4px;
+}
+
+.kontaktliste {
+    font-size: 40pt;
+
+    a {
+        text-decoration: none;
+        color          : #212529;
+    }
+
+    a:hover {
+        color: $fff-dunkelgruen;
     }
 }
 

@@ -55,14 +55,17 @@ body ::selection {
 }
 
 .anchor {
-  top: -80px;
+  top: -75px;
   position: relative;
   display: block;
 }
 
-main a,
 footer a {
   color: #90d3ed !important;
+}
+
+main a {
+  color: #196685;
 }
 
 p {
@@ -90,8 +93,9 @@ h3 {
 }
 
 header {
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  margin-bottom: 0.5em;
 }
 
 header h1 h2 {
@@ -99,28 +103,46 @@ header h1 h2 {
 }
 
 main section:first-of-type {
-  padding-top: 7em;
-  padding-bottom: 2em;
+  padding-top: 4em;
+  padding-bottom: 1.5em;
 }
 
 main section:last-of-type {
-  padding-top: 2em;
+  padding-top: 1.5em;
   padding-bottom: 4em;
 }
 
 .main-section {
-  padding-top: 2em;
-  padding-bottom: 2em;
-}
-
-.main-section .inner-container {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
+.main-section .inner-container {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
 .main-section .inner-container:last-of-type {
-  padding-top: 1.5em;
+  padding-top: 0.5em;
   padding-bottom: 0em;
+}
+
+.inline-social-logo {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.kontaktliste {
+  font-size: 40pt;
+}
+
+.kontaktliste a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.kontaktliste a:hover {
+  color: #1b7340;
 }
 
 footer {
