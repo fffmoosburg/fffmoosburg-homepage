@@ -59,10 +59,30 @@ body {
 }
 
 .anchor {
-    top     : -75px;
+    top     : -80px;
     position: relative;
     display : block;
 }
+
+.navmessagefx {
+    display: none;
+}
+
+@media screen and (max-width: 575px) {
+    .anchor {
+        top     : -315px;
+        position: relative;
+        display : block;
+    }
+
+    .gecko .navmessagefx {
+        display: block;
+        color  : $fff-rot;
+    }
+}
+
+
+
 
 footer {
     a {
