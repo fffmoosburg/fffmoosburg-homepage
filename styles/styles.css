@@ -77,11 +77,15 @@ body ::selection {
 }
 
 footer a {
-  color: #90d3ed !important;
+  color: #90d3ed;
 }
 
 main a {
   color: #196685;
+}
+
+main a:hover {
+  color: #1b7340;
 }
 
 p {

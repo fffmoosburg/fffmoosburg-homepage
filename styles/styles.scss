@@ -86,13 +86,17 @@ body {
 
 footer {
     a {
-        color: $fff-blau !important;
+        color: $fff-blau;
     }
 }
 
 main {
     a {
-        color: hsl(197, 68%, 31%);
+        color: #196685;
+    }
+
+    a:hover {
+        color: $fff-dunkelgruen;
     }
 }
 
