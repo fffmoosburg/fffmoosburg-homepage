@@ -1,1 +1,168 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+.fff-bg-hellgruen {
+  background-color: #1da64a;
+}
+
+.fff-bg-dunkelgruen {
+  background-color: #1b7340;
+}
+
+.fff-bg-hamburg-gruen {
+  background-color: #549670;
+}
+
+.fff-bg-blau {
+  background-color: #90d3ed;
+}
+
+.fff-bg-rot {
+  background-color: #f5333f;
+}
+
+.fff-hellgruen {
+  color: #1da64a;
+}
+
+.fff-dunkelgruen {
+  color: #1b7340;
+}
+
+.fff-hamburg-gruen {
+  color: #549670;
+}
+
+.fff-blau {
+  color: #90d3ed;
+}
+
+.fff-rot {
+  color: #f5333f;
+}
+
+body {
+  position: relative;
+  font-family: Jost;
+  font-weight: 400;
+}
+
+body ::-moz-selection {
+  background-color: #1b7340;
+  color: #fff;
+}
+
+body ::selection {
+  background-color: #1b7340;
+  color: #fff;
+}
+
+.anchor {
+  top: -80px;
+  position: relative;
+  display: block;
+}
+
+.navmessagefx {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  .anchor {
+    top: -315px;
+    position: relative;
+    display: block;
+  }
+  .gecko .navmessagefx {
+    display: block;
+    color: #f5333f;
+  }
+}
+
+footer a {
+  color: #90d3ed !important;
+}
+
+main a {
+  color: #196685;
+}
+
+p {
+  font-weight: 400;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+h3 {
+  font-weight: 500;
+  margin-bottom: 0.25em;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #1b7340;
+}
+
+header {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+header h1 h2 {
+  font-weight: bold;
+}
+
+main section:first-of-type {
+  padding-top: 4em;
+  padding-bottom: 1.5em;
+}
+
+main section:last-of-type {
+  padding-top: 1.5em;
+  padding-bottom: 4em;
+}
+
+.main-section {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
+.main-section .inner-container {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.main-section .inner-container:last-of-type {
+  padding-top: 0.5em;
+  padding-bottom: 0em;
+}
+
+.inline-social-logo {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+
+.kontaktliste {
+  font-size: 40pt;
+}
+
+.kontaktliste a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.kontaktliste a:hover {
+  color: #1b7340;
+}
+
+footer {
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+/*# sourceMappingURL=styles.css.map */

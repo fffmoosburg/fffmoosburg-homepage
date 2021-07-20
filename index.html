@@ -3,44 +3,257 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html lang="de">
+<html lang="de" class="bg-dark">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <title>Fridays For Future Moosburg</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="img/favicon/favicon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="img/favicon/favicon48x.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/favicon192x.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="167x167" href="img/favicon/favicon167x.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="img/favicon/favicon180x.png">
+    <link rel="apple-touch-icon" type="image/png" sizes="1080x1080" href="img/favicon/favicon.png">
+    <link rel="stylesheet" href="fonts/jost.css" type="text/css" charset="utf-8" />
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="jquery/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="fontawesome/js/all.min.js"></script>
+    <script src="js/css_browser_selector.js"></script>
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="25" data-bs-method="auto" class="bg-light">
     <!--[if lt IE 7]>
                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-    <nav></nav>
+    <div id="top" class="visually-hidden"></div>
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-dark fff-bg-dunkelgruen sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#top">
+                <img src="img/logotransparent.png" style="height: 4em; width: 4em; margin: 0 0 0 0; padding: 0 0 0 0;"
+                    class="navbar-img" alt="Logo der Fridays For Future Ortsgruppe Moosburg">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="navmessagefx">
+                    <p class="navmessagefx">Es scheint als würdest du Firefox am Handy verwenden, die Navigation hat
+                        dort leider mehr was von
+                        einem Lottospiel. Wir versuchen eine Lösung zu finden, versprochen!</p>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#top">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#ueber-uns">Über uns</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#forderungen" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Forderungen
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#forderungen-de">Bundesweite Forderungen</a></li>
+                            <!--<li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#forderungen-mog">Lokale Forderungen</a></li>-->
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#aktionen" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Aktionen
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <div class="dropdown-header">Kommender Streik</div>
+                            </li>
+                            <li><a class="dropdown-item" href="#kommender-streik">24.09 #AlleFürsKlima</a></li>
+                            <li class="visually-hidden">
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li class="visually-hidden">
+                                <div class="dropdown-header">Vergangene Streiks</div>
+                            </li>
+                            <li class="visually-hidden"><a class="dropdown-item" href="#vergangene-streiks">Datum
+                                    #Streikhashtag</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <div class="dropdown-header">Sonstige</div>
+                            </li>
+                            <li><a class="dropdown-item" href="#sonstige-aktionen">Sprühkreideaktion</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontakt">Kontakt</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <header></header>
+    <header class="fff-bg-blau">
+        <div class="container">
+            <div class="text-center">
+                <h1>Fridays For Future</h1>
+                <h2>Ortsgruppe Moosburg</h2>
+            </div>
+        </div>
+    </header>
 
-    <main></main>
+    <main>
+        <a class="anchor" id="ueber-uns"></a>
+        <section class="main-section">
+            <div class="container">
+                <h2>Über Uns</h2>
+                <p>Wir, das Orga-Team, haben uns Mitte 2020 dafür entschieden auch für Moosburg eine Fridays For Future
+                    Ortsgruppe zu starten. Nach einer halbjährigen Planungs- und Organisierungsphase waren wir dann
+                    Anfang 2021 soweit uns offiziell als Ortsgruppe eintragen zu lassen und erste Aktionen zu planen und
+                    durchzuführen. Unsere erste Aktion war im März 2021 eine Sprühkreide-Awareness-Aktion. Jetzt sind
+                    wir so weit und freuen uns den Globalen Streik am 24.09 auch in Moosburg ankündigen zu können.</p>
+            </div>
+        </section>
 
-    <footer>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">
-            <img alt="Creative Commons Lizenzvertrag" style="border-width:0"
-                src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" />
-        </a>
-        <br />
-        Diese Website ist lizenziert unter einer
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Namensnennung - Nicht
-            kommerziell - Keine Bearbeitungen 4.0 International Lizenz
-        </a>.
+        <a class="anchor" id="forderungen"></a>
+        <section class="main-section">
+            <div class="container">
+                <h2>Forderungen</h2>
+                <a class="anchor" id="forderung"></a>
+                <div class="ziele-container">
+                    <a class="anchor" id="forderungen-de"></a>
+                    <div class="inner-container">
+                        <h3>Bundesweite Forderungen</h3>
+                        <p>Wir fordern die Einhaltung des Pariser Abkommens und des 1,5°C-Ziels<br /><strong>Darum
+                                fordern wir für Deutschland:</strong></p>
+                        <ul>
+                            <li>Nettonull 2035 erreichen</li>
+                            <li>Kohleausstieg bis 2030</li>
+                            <li>100% erneuerbare Energieversorgung bis 2035</li>
+                        </ul>
+                    </div>
+                    <!--<a class="anchor" id="forderungen-mog"></a>
+                    <div class="inner-container">
+                        <h3>Lokale Forderungen</h3>
+                        <p>Neben den Deutschlandweiten Forderungen haben wir natürlich auch Ziele für die Stadt Moosburg
+                            und Umgebung:</p>
+                        <ul>
+                            <li>Forderung</li>
+                            <li>Forderung</li>
+                            <li>Forderung</li>
+                        </ul>
+                    </div>-->
+                </div>
+            </div>
+        </section>
+        <a class="anchor" id="aktionen"></a>
+        <section class="main-section">
+            <div class="container">
+                <h2>Aktionen</h2>
+                <a class="anchor" id="kommender-streik"></a>
+                <div class="inner-container">
+                    <h3>24.09 #AlleFürsKlima</h3>
+                    <p>Happy News! Am 24.09.2021 werden wir zum ersten Mal an einem globalen Klimastreik teilnehmen und
+                        haben damit die erste große Demo in Moosburg.</p>
+                    <h4>Planungen</h4>
+                    <p>Wir sind momentan noch in der Planungsphase. Sobald es neue Informationen gibt werden wir euch
+                        hier auf dem Laufenden halten!</p>
+                </div>
+                <a class="anchor" id="vergangene-streiks"></a>
+                <div class="visually-hidden inner-container">
+                    <h3>Datum #StreikHashtag</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur mollitia quasi minus
+                        voluptatem ad distinctio obcaecati accusantium dolorem minima aliquid nobis, ratione vero? Neque
+                        quis asperiores vel ex soluta molestias adipisci quia aut ab rerum iure dolorum debitis at
+                        reprehenderit, nostrum esse nesciunt inventore atque sint, deserunt facere, ea doloremque!</p>
+                </div>
+                <a class="anchor" id="sonstige-aktionen"></a>
+                <div class="inner-container">
+                    <h3>Sprühkreideaktion</h3>
+                    <p>Mitte März 2021 hatten wir zusammen mit Fresh.Moosburg eine kleine "Sprühkreide-Awareness-Aktion"
+                        und haben in der Stadt Zeichen für mehr Klimagerechtigkeit gesetzt.<br /><a
+                            href="https://www.instagram.com/p/CMueschFnbw/" target="_blank"><i
+                                class="fab fa-instagram inline-social-logo"></i>Instagram</a></p>
+                </div>
+            </div>
+        </section>
+        <a class="anchor" id="kontakt"></a>
+        <section class="main-section">
+            <div class="container">
+                <h2>Kontakt</h2>
+                <p>Du willst mehr von uns Wissen oder gar selber mitmachen? Prima! Hier findest du unsere Social-Media
+                    Handles und den Link zu unserer WhatsApp Gruppe</p>
+                <div class="row kontaktliste text-center">
+                    <div class="col-md-4">
+                        <a href="https://www.instagram.com/fridaysforfuturemoosburg/" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            <p>Instagram</p>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://chat.whatsapp.com/Hk5DCZsreJDIaUwhSc6rQb" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            <p>WhatsApp</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="example text-light bg-dark">
+        <div class="container-fluid">
+            <div class="license text-center">
+                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.de">
+                    <img alt="Creative Commons Lizenzvertrag" style="border-width:0" src="img/license/88x31-e.png" />
+                </a>
+                <br />
+                Diese Website ist lizenziert unter einer
+                <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/deed.de">Creative Commons BY-NC-ND 4.0
+                    International
+                    Lizenz</a>.
+            </div>
+            <div class="attributions text-center">
+                Using <a href="https://github.com/ridjohansen/css_browser_selector/" target="_blank">CSS Browser
+                    Selector</a> by <a href="https://github.com/ridjohansen/" target="_blank">rafaelp</a>
+            </div>
+        </div>
     </footer>
 
-
     <script src="" async defer></script>
+
+    <script>
+        $(document).on("scroll", function (e) {
+            var size = 32 / $(document).scrollTop() * 8;
+            var endsize = 4;
+            if (size <= 2) {
+                endsize = 2;
+            }
+            else if (size >= 4) {
+                endsize = 4;
+            } else if (size > 2) {
+                endsize = size;
+            }
+            $(".navbar-img").css("width", endsize + "em");
+            $(".navbar-img").css("height", endsize + "em");
+        });
+    </script>
 </body>
 
 </html>
