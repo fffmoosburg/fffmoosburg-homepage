@@ -83,7 +83,6 @@ body {
 
 
 
-
 footer {
     a {
         color: $fff-blau;
@@ -177,6 +176,11 @@ main {
     a:hover {
         color: $fff-dunkelgruen;
     }
+}
+
+.sharepicpreview {
+    width : 50%;
+    height: auto;
 }
 
 footer {

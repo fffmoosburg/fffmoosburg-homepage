@@ -165,6 +165,11 @@ main section:last-of-type {
   color: #1b7340;
 }
 
+.sharepicpreview {
+  width: 50%;
+  height: auto;
+}
+
 footer {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
