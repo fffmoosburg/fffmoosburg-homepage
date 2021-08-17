@@ -179,8 +179,37 @@ main {
 }
 
 .sharepicpreview {
-    width : 50%;
-    height: auto;
+    width        : 25%;
+    height       : auto;
+    margin-top   : 1em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 991px) {
+    .sharepicpreview {
+        width        : 35%;
+        height       : auto;
+        margin-top   : 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sharepicpreview {
+        width        : 40%;
+        height       : auto;
+        margin-top   : 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .sharepicpreview {
+        width        : 60%;
+        height       : auto;
+        margin-top   : 1em;
+        margin-bottom: 1em;
+    }
 }
 
 footer {
