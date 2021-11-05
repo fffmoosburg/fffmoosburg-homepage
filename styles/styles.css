@@ -40,7 +40,7 @@
 
 body {
   position: relative;
-  font-family: Jost;
+  font-family: Jost !important;
   font-weight: 400;
 }
 
@@ -163,6 +163,25 @@ main section:last-of-type {
 
 .kontaktliste a:hover {
   color: #1b7340;
+}
+
+.kontaktliste .instagram {
+  text-decoration: none;
+  color: #616161;
+}
+
+.kontaktliste .instagram:hover {
+  color: #9e0000;
+}
+
+.kontaktliste .gesperrt {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+.kontaktliste .gesperrt p {
+  font-size: 20pt;
+  font-weight: bold;
 }
 
 .sharepicpreview {

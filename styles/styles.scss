@@ -49,7 +49,7 @@ $fff-rot           : rgb(245, 51, 63);
 body {
     position: relative;
 
-    font-family: Jost;
+    font-family: Jost !important;
     font-weight: 400;
 
     ::selection {
@@ -175,6 +175,25 @@ main {
 
     a:hover {
         color: $fff-dunkelgruen;
+    }
+
+    .instagram {
+        text-decoration: none;
+        color          : #616161;
+    }
+
+    .instagram:hover {
+        color: #9e0000;
+    }
+
+    .gesperrt {
+        font-size  : 20pt;
+        font-weight: bold;
+
+        p {
+            font-size  : 20pt;
+            font-weight: bold;
+        }
     }
 }
 
