@@ -154,6 +154,24 @@ main section:last-of-type {
 
 .kontaktliste {
   font-size: 40pt;
+  /* .instagram {
+        text-decoration: none;
+        color          : #616161;
+    }
+
+    .instagram:hover {
+        color: #9e0000;
+    }
+
+    .gesperrt {
+        font-size  : 20pt;
+        font-weight: bold;
+
+        p {
+            font-size  : 20pt;
+            font-weight: bold;
+        }
+    } */
 }
 
 .kontaktliste a {
@@ -163,25 +181,6 @@ main section:last-of-type {
 
 .kontaktliste a:hover {
   color: #1b7340;
-}
-
-.kontaktliste .instagram {
-  text-decoration: none;
-  color: #616161;
-}
-
-.kontaktliste .instagram:hover {
-  color: #9e0000;
-}
-
-.kontaktliste .gesperrt {
-  font-size: 20pt;
-  font-weight: bold;
-}
-
-.kontaktliste .gesperrt p {
-  font-size: 20pt;
-  font-weight: bold;
 }
 
 .sharepicpreview {
