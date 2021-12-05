@@ -1,6 +1,3 @@
-User-Agent: *
-Disallow: /datenschutz/
-
 User-agent: Googlebot
 Allow: /
 
@@ -24,5 +21,29 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+User-agent: Googlebot
+Disallow: /datenschutz/
+
+User-agent: Googlebot-News
+Disallow: /datenschutz/
+
+User-agent: Googlebot-Image
+Disallow: /datenschutz/
+
+User-agent: Googlebot-Video
+Disallow: /datenschutz/
+
+User-agent: Googlebot-Mobile
+Disallow: /datenschutz/
+
+User-agent: Mediapartners-Google
+Disallow: /datenschutz/
+
+User-agent: Adsbot-Google
+Disallow: /datenschutz/
+
+User-Agent: *
+Disallow: /datenschutz/
 
 Sitemap: https://fffmoosburg.github.io/sitemap.xml
