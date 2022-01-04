@@ -38,9 +38,13 @@
   color: #f5333f;
 }
 
+.hidden {
+  display: none;
+}
+
 body {
   position: relative;
-  font-family: Jost;
+  font-family: Jost !important;
   font-weight: 400;
 }
 
@@ -64,6 +68,10 @@ body ::selection {
   display: none;
 }
 
+.sharepicbuttonnavbarcontainer {
+  margin-left: 0.75em;
+}
+
 @media screen and (max-width: 575px) {
   .anchor {
     top: -315px;
@@ -77,11 +85,15 @@ body ::selection {
 }
 
 footer a {
-  color: #90d3ed !important;
+  color: #90d3ed;
 }
 
 main a {
   color: #196685;
+}
+
+main a:hover {
+  color: #1b7340;
 }
 
 p {
@@ -150,6 +162,24 @@ main section:last-of-type {
 
 .kontaktliste {
   font-size: 40pt;
+  /* .instagram {
+        text-decoration: none;
+        color          : #616161;
+    }
+
+    .instagram:hover {
+        color: #9e0000;
+    }
+
+    .gesperrt {
+        font-size  : 20pt;
+        font-weight: bold;
+
+        p {
+            font-size  : 20pt;
+            font-weight: bold;
+        }
+    } */
 }
 
 .kontaktliste a {
@@ -159,6 +189,40 @@ main section:last-of-type {
 
 .kontaktliste a:hover {
   color: #1b7340;
+}
+
+.sharepicpreview {
+  width: 25%;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width: 991px) {
+  .sharepicpreview {
+    width: 35%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sharepicpreview {
+    width: 40%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .sharepicpreview {
+    width: 60%;
+    height: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }
 
 footer {

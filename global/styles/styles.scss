@@ -44,12 +44,14 @@ $fff-rot           : rgb(245, 51, 63);
     color: $fff-rot;
 }
 
-
+.hidden {
+    display: none;
+}
 
 body {
     position: relative;
 
-    font-family: Jost;
+    font-family: Jost !important;
     font-weight: 400;
 
     ::selection {
@@ -68,6 +70,10 @@ body {
     display: none;
 }
 
+.sharepicbuttonnavbarcontainer {
+    margin-left: 0.75em;
+}
+
 @media screen and (max-width: 575px) {
     .anchor {
         top     : -315px;
@@ -83,16 +89,19 @@ body {
 
 
 
-
 footer {
     a {
-        color: $fff-blau !important;
+        color: $fff-blau;
     }
 }
 
 main {
     a {
-        color: hsl(197, 68%, 31%);
+        color: #196685;
+    }
+
+    a:hover {
+        color: $fff-dunkelgruen;
     }
 }
 
@@ -172,6 +181,59 @@ main {
 
     a:hover {
         color: $fff-dunkelgruen;
+    }
+
+    /* .instagram {
+        text-decoration: none;
+        color          : #616161;
+    }
+
+    .instagram:hover {
+        color: #9e0000;
+    }
+
+    .gesperrt {
+        font-size  : 20pt;
+        font-weight: bold;
+
+        p {
+            font-size  : 20pt;
+            font-weight: bold;
+        }
+    } */
+}
+
+.sharepicpreview {
+    width        : 25%;
+    height       : auto;
+    margin-top   : 1em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 991px) {
+    .sharepicpreview {
+        width        : 35%;
+        height       : auto;
+        margin-top   : 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .sharepicpreview {
+        width        : 40%;
+        height       : auto;
+        margin-top   : 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .sharepicpreview {
+        width        : 60%;
+        height       : auto;
+        margin-top   : 1em;
+        margin-bottom: 1em;
     }
 }
 
