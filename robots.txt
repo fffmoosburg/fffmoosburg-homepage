@@ -1,4 +1,5 @@
 User-Agent: *
-Disallow: /datenschutz/
+Disallow: /de/datenschutz/
+Disallow: /en/datenschutz/
 
 Sitemap: https://fffmoosburg.github.io/sitemap.xml

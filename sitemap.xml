@@ -20,11 +20,6 @@
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://fffmoosburg.github.io/de/datenschutz/</loc>
-  <lastmod>2021-12-05T10:43:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://fffmoosburg.github.io/en/</loc>
   <lastmod>2021-12-05T10:43:15+00:00</lastmod>
   <priority>1.00</priority>
@@ -36,11 +31,6 @@
 </url>
 <url>
   <loc>https://fffmoosburg.github.io/en/impressum/</loc>
-  <lastmod>2021-12-05T10:43:15+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://fffmoosburg.github.io/en/datenschutz/</loc>
   <lastmod>2021-12-05T10:43:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
