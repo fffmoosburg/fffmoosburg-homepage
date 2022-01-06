@@ -1,2 +1,2 @@
 # fff-moosburg
-Repository für die Webseite der FridaysForFuture-Ortsgruppe Moosburg a. d. Isar
+Repository for the Webpage of Fridays For Future Moosburg, hosted on fffmoosburg.github.io
