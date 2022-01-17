@@ -9,7 +9,7 @@
  https://github.com/delka/css_browser_selector
  https://github.com/verbatim/css_browser_selector
  */
-(function() {
+(function () {
     var uaInfo = {
         ua: '',
         is: function (t) {
@@ -107,25 +107,25 @@
         }
     };
 
-if (typeof html =='undefined') { 
-	html=document.documentElement;
-}
+    if (typeof html == 'undefined') {
+        html = document.documentElement;
+    }
 
     var screenInfo = {
         width: (window.outerWidth || html.clientWidth) - 15,
         height: window.outerHeight || html.clientHeight,
         screens: [0, 768, 980, 1200],
-	
+
         screenSize: function () {
             screenInfo.width = (window.outerWidth || html.clientWidth) - 15;
             screenInfo.height = window.outerHeight || html.clientHeight;
-			
+
             var screens = screenInfo.screens,
                 i = screens.length,
                 arr = [],
                 maxw,
                 minw;
-		
+
             while (i--) {
                 if (screenInfo.width >= screens[i]) {
                     if (i) {
@@ -185,108 +185,108 @@ if (typeof html =='undefined') {
 
     };
 
-function css_browser_selector(u, ns) {
-    var html = document.documentElement,
-        b = [];
-		ns = ns ? ns : "";
+    function css_browser_selector(u, ns) {
+        var html = document.documentElement,
+            b = [];
+        ns = ns ? ns : "";
 
-	/* ua */
-	uaInfo.ua = u.toLowerCase();
-	b = b.concat(uaInfo.getBrowser());
-	b = b.concat(uaInfo.getPlatform());
-	b = b.concat(uaInfo.getMobile());
-	b = b.concat(uaInfo.getIpadApp());
-	b = b.concat(uaInfo.getLang());
-
-
-	/* js */
-	b = b.concat(['js']);
-
-	/* pixel ratio */
-	b = b.concat(screenInfo.getPixelRatio());
-
-	/* screen */
-	b = b.concat(screenInfo.getInfo());
-
-    var updateScreen = function () {
-        html.className = html.className.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "");
-        html.className = html.className + ' ' + screenInfo.getInfo().join(' ');
-    };
-
-	if (window.addEventListener) {
-		window.addEventListener('resize', updateScreen);
-		window.addEventListener('orientationchange', updateScreen);
-	} else if (window.attachEvent) {
-		window.attachEvent('onresize', updateScreen);
-	}
-
-	/* dataURI */
-	var data = dataUriInfo.getImg();
-    data.onload = data.onerror = function () {
-        html.className += ' ' + dataUriInfo.checkSupport().join(' ');
-    };
+        /* ua */
+        uaInfo.ua = u.toLowerCase();
+        b = b.concat(uaInfo.getBrowser());
+        b = b.concat(uaInfo.getPlatform());
+        b = b.concat(uaInfo.getMobile());
+        b = b.concat(uaInfo.getIpadApp());
+        b = b.concat(uaInfo.getLang());
 
 
-	/* save & add existing html classes */
-	var classes = html.className;
-	var classesArray = classes.split(/ /);
+        /* js */
+        b = b.concat(['js']);
 
-	/* merge existing classes on html tag */
-	b = b.concat(classesArray);
+        /* pixel ratio */
+        b = b.concat(screenInfo.getPixelRatio());
 
-	/* removendo itens invalidos do array */
-	/* add filter function polyfill for IE8 */
-	if (!Array.prototype.filter) {
-		Array.prototype.filter = function(fun/*, thisArg*/) {
-			'use strict';
+        /* screen */
+        b = b.concat(screenInfo.getInfo());
 
-			if (this === void 0 || this === null) {
-				throw new TypeError();
-			}
+        var updateScreen = function () {
+            html.className = html.className.replace(/ ?orientation_\w+/g, "").replace(/ [min|max|cl]+[w|h]_\d+/g, "");
+            html.className = html.className + ' ' + screenInfo.getInfo().join(' ');
+        };
 
-			var t = Object(this);
-			var len = t.length >>> 0;
-			if (typeof fun !== 'function') {
-				throw new TypeError();
-			}
-
-			var res = [];
-			var thisArg = arguments.length >= 2 ? arguments[1] : void 0;
-			for (var i = 0; i < len; i++) {
-				if (i in t) {
-					var val = t[i];
-
-					// NOTE: Technically this should Object.defineProperty at
-					//			 the next index, as push can be affected by
-					//			 properties on Object.prototype and Array.prototype.
-					//			 But that method's new, and collisions should be
-					//			 rare, so use the more-compatible alternative.
-					if (fun.call(thisArg, val, i, t)) {
-						res.push(val);
-					}
-				}
-			}
-
-			return res;
-		};
-	}
-
-	b = b.filter(function(e){
-		/* if no-js class exists, remove it */
-		if (e === 'no-js') {
-			return false;
+        if (window.addEventListener) {
+            window.addEventListener('resize', updateScreen);
+            window.addEventListener('orientationchange', updateScreen);
+        } else if (window.attachEvent) {
+            window.attachEvent('onresize', updateScreen);
         }
-		return e;
-	});
 
-	/* prefixo do namespace */
-	b[0] = ns ? ns + b[0] : b[0];
-	html.className = b.join(' ' + ns);
-	return html.className;
-}
+        /* dataURI */
+        var data = dataUriInfo.getImg();
+        data.onload = data.onerror = function () {
+            html.className += ' ' + dataUriInfo.checkSupport().join(' ');
+        };
 
-// Add css_browser_selector as a global object.
-window.css_browser_selector = css_browser_selector;
+
+        /* save & add existing html classes */
+        var classes = html.className;
+        var classesArray = classes.split(/ /);
+
+        /* merge existing classes on html tag */
+        b = b.concat(classesArray);
+
+        /* removendo itens invalidos do array */
+        /* add filter function polyfill for IE8 */
+        if (!Array.prototype.filter) {
+            Array.prototype.filter = function (fun/*, thisArg*/) {
+                'use strict';
+
+                if (this === void 0 || this === null) {
+                    throw new TypeError();
+                }
+
+                var t = Object(this);
+                var len = t.length >>> 0;
+                if (typeof fun !== 'function') {
+                    throw new TypeError();
+                }
+
+                var res = [];
+                var thisArg = arguments.length >= 2 ? arguments[1] : void 0;
+                for (var i = 0; i < len; i++) {
+                    if (i in t) {
+                        var val = t[i];
+
+                        // NOTE: Technically this should Object.defineProperty at
+                        //			 the next index, as push can be affected by
+                        //			 properties on Object.prototype and Array.prototype.
+                        //			 But that method's new, and collisions should be
+                        //			 rare, so use the more-compatible alternative.
+                        if (fun.call(thisArg, val, i, t)) {
+                            res.push(val);
+                        }
+                    }
+                }
+
+                return res;
+            };
+        }
+
+        b = b.filter(function (e) {
+            /* if no-js class exists, remove it */
+            if (e === 'no-js') {
+                return false;
+            }
+            return e;
+        });
+
+        /* prefixo do namespace */
+        b[0] = ns ? ns + b[0] : b[0];
+        html.className = b.join(' ' + ns);
+        return html.className;
+    }
+
+    // Add css_browser_selector as a global object.
+    window.css_browser_selector = css_browser_selector;
 })();
 
 // define css_browser_selector_ns before loading this script to assign a namespace
