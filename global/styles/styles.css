@@ -229,4 +229,30 @@ footer {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
+
+/*.CybotCookiebotDialogBodyLevelButton .CybotCookiebotDialogBodyLevelConsentCheckbox {
+    color: $fff-dunkelgruen !important;
+    background-color: $fff-dunkelgruen !important;
+}
+
+.CybotCookiebotDialogNavItemLink .CybotCookiebotDialogActive {
+    border-bottom: 1px solid $fff-dunkelgruen !important;
+}
+  */
+#CybotCookiebotDialogNavDeclaration {
+  border-bottom: 1px solid #1b7340 !important;
+}
+
+.CybotCookiebotDialogBodyButton {
+  background-color: #1b7340 !important;
+  border-color: #1b7340 !important;
+}
+
+.CybotCookiebotDialogBodyButton {
+  border: 2px solid #1b7340 !important;
+}
+
+.CybotCookiebotDialogBodyLevelButtonSlider {
+  background-color: #1b7340 !important;
+}
 /*# sourceMappingURL=styles.css.map */

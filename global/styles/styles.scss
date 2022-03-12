@@ -1,9 +1,8 @@
-$fff-hellgruen     : rgb(29, 166, 74);
-$fff-dunkelgruen   : rgb(27, 115, 64);
-$fff-hamburg-gruen : rgb(84, 150, 112);
-$fff-blau          : rgb(144, 211, 237);
-$fff-rot           : rgb(245, 51, 63);
-
+$fff-hellgruen: rgb(29, 166, 74);
+$fff-dunkelgruen: rgb(27, 115, 64);
+$fff-hamburg-gruen: rgb(84, 150, 112);
+$fff-blau: rgb(144, 211, 237);
+$fff-rot: rgb(245, 51, 63);
 .fff-bg-hellgruen {
     background-color: $fff-hellgruen;
 }
@@ -50,20 +49,18 @@ $fff-rot           : rgb(245, 51, 63);
 
 body {
     position: relative;
-
     font-family: Jost !important;
     font-weight: 400;
-
-    ::selection {
+     ::selection {
         background-color: $fff-dunkelgruen;
-        color           : #fff;
+        color: #fff;
     }
 }
 
 .anchor {
-    top     : -80px;
+    top: -80px;
     position: relative;
-    display : block;
+    display: block;
 }
 
 .navmessagefx {
@@ -76,18 +73,15 @@ body {
 
 @media screen and (max-width: 575px) {
     .anchor {
-        top     : -315px;
+        top: -315px;
         position: relative;
-        display : block;
+        display: block;
     }
-
     .gecko .navmessagefx {
         display: block;
-        color  : $fff-rot;
+        color: $fff-rot;
     }
 }
-
-
 
 footer {
     a {
@@ -99,7 +93,6 @@ main {
     a {
         color: #196685;
     }
-
     a:hover {
         color: $fff-dunkelgruen;
     }
@@ -110,17 +103,17 @@ p {
 }
 
 h1 {
-    font-weight  : 700;
+    font-weight: 700;
     margin-bottom: 0.5em;
 }
 
 h2 {
-    font-weight  : 600;
+    font-weight: 600;
     margin-bottom: 0.5em;
 }
 
 h3 {
-    font-weight  : 500;
+    font-weight: 500;
     margin-bottom: 0.25em;
 }
 
@@ -130,10 +123,9 @@ h3 {
 }
 
 header {
-    padding-top   : 2.5em;
+    padding-top: 2.5em;
     padding-bottom: 2.5em;
-    margin-bottom : 0.5em;
-
+    margin-bottom: 0.5em;
     h1 h2 {
         font-weight: bold;
     }
@@ -141,48 +133,42 @@ header {
 
 main {
     section:first-of-type {
-        padding-top   : 4em;
+        padding-top: 4em;
         padding-bottom: 1.5em;
     }
-
     section:last-of-type {
-        padding-top   : 1.5em;
+        padding-top: 1.5em;
         padding-bottom: 4em;
     }
 }
 
 .main-section {
-    padding-top   : 1.5em;
+    padding-top: 1.5em;
     padding-bottom: 1.5em;
-
     .inner-container {
-        padding-top   : 0.5em;
+        padding-top: 0.5em;
         padding-bottom: 0.5em;
     }
-
     .inner-container:last-of-type {
-        padding-top   : 0.5em;
+        padding-top: 0.5em;
         padding-bottom: 0em;
     }
 }
 
 .inline-social-logo {
-    margin-left : 4px;
+    margin-left: 4px;
     margin-right: 4px;
 }
 
 .kontaktliste {
     font-size: 40pt;
-
     a {
         text-decoration: none;
-        color          : #212529;
+        color: #212529;
     }
-
     a:hover {
         color: $fff-dunkelgruen;
     }
-
     /* .instagram {
         text-decoration: none;
         color          : #616161;
@@ -204,40 +190,68 @@ main {
 }
 
 .sharepicpreview {
-    width        : 25%;
-    height       : auto;
-    margin-top   : 1em;
+    width: 25%;
+    height: auto;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
 @media screen and (max-width: 991px) {
     .sharepicpreview {
-        width        : 35%;
-        height       : auto;
-        margin-top   : 1em;
+        width: 35%;
+        height: auto;
+        margin-top: 1em;
         margin-bottom: 1em;
     }
 }
 
 @media screen and (max-width: 767px) {
     .sharepicpreview {
-        width        : 40%;
-        height       : auto;
-        margin-top   : 1em;
+        width: 40%;
+        height: auto;
+        margin-top: 1em;
         margin-bottom: 1em;
     }
 }
 
 @media screen and (max-width: 575px) {
     .sharepicpreview {
-        width        : 60%;
-        height       : auto;
-        margin-top   : 1em;
+        width: 60%;
+        height: auto;
+        margin-top: 1em;
         margin-bottom: 1em;
     }
 }
 
 footer {
-    padding-top   : 1.5em;
+    padding-top: 1.5em;
     padding-bottom: 1.5em;
+}
+
+
+/*.CybotCookiebotDialogBodyLevelButton .CybotCookiebotDialogBodyLevelConsentCheckbox {
+    color: $fff-dunkelgruen !important;
+    background-color: $fff-dunkelgruen !important;
+}
+
+.CybotCookiebotDialogNavItemLink .CybotCookiebotDialogActive {
+    border-bottom: 1px solid $fff-dunkelgruen !important;
+}
+  */
+
+#CybotCookiebotDialogNavDeclaration {
+    border-bottom: 1px solid $fff-dunkelgruen !important;
+}
+
+.CybotCookiebotDialogBodyButton {
+    background-color: $fff-dunkelgruen !important;
+    border-color: $fff-dunkelgruen !important;
+}
+
+.CybotCookiebotDialogBodyButton {
+    border: 2px solid $fff-dunkelgruen !important;
+}
+
+.CybotCookiebotDialogBodyLevelButtonSlider {
+    background-color: $fff-dunkelgruen !important;
 }
