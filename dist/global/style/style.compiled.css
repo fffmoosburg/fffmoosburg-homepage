@@ -598,6 +598,26 @@ video {
   margin-bottom: 1rem;
 }
 
+.my-percent6_25 {
+  margin-top: 6.25%;
+  margin-bottom: 6.25%;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.my-percent3_125 {
+  margin-top: 3.125%;
+  margin-bottom: 3.125%;
+}
+
+.mx-percent3_125 {
+  margin-left: 3.125%;
+  margin-right: 3.125%;
+}
+
 .-mr-2 {
   margin-right: -0.5rem;
 }
@@ -682,6 +702,10 @@ video {
   height: 2rem;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -704,6 +728,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-percent25 {
+  width: 25%;
 }
 
 .max-w-7xl {
@@ -774,12 +802,20 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
 .flex-col {
   flex-direction: column;
 }
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .flex-nowrap {
@@ -953,6 +989,11 @@ video {
 .bg-fffhellgruen {
   --tw-bg-opacity: 1;
   background-color: rgb(29 166 74 / var(--tw-bg-opacity));
+}
+
+.bg-red-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
 
 .p-2 {
@@ -1176,6 +1217,12 @@ video {
 .shadow-neumorphism {
   --tw-shadow: 20px 20px 40px #0c1018, -20px -20px 40px #30425e;
   --tw-shadow-colored: 20px 20px 40px var(--tw-shadow-color), -20px -20px 40px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-neumorphism-light-hov {
+  --tw-shadow: 2px 2px 5px #606264, -2px -2px 5px #ffffff;
+  --tw-shadow-colored: 2px 2px 5px var(--tw-shadow-color), -2px -2px 5px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1460,6 +1507,11 @@ video {
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-fffrot:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 51 63 / var(--tw-bg-opacity));
+}
+
 .hover\:text-gray-500:hover {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1478,6 +1530,12 @@ video {
 .hover\:shadow-neumorphism-light-hov:hover {
   --tw-shadow: 2px 2px 5px #606264, -2px -2px 5px #ffffff;
   --tw-shadow-colored: 2px 2px 5px var(--tw-shadow-color), -2px -2px 5px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.hover\:shadow-neumorphism-light:hover {
+  --tw-shadow: 5px 5px 10px #606264, -5px -5px 10px #ffffff;
+  --tw-shadow-colored: 5px 5px 10px var(--tw-shadow-color), -5px -5px 10px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
