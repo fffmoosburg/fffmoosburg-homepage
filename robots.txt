@@ -1,5 +1,9 @@
 User-Agent: *
+Disallow: /impressum
+Disallow: /datenschutz
 Disallow: /impressum/
 Disallow: /datenschutz/
+Disallow: /impressum/index.html
+Disallow: /datenschutz/index.html
 
 Sitemap: https://fffmoosburg.de/sitemap.xml
