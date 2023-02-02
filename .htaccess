@@ -1,0 +1,19 @@
+Redirect 301 /de/index.html https://fffmoosburg.de/
+Redirect 301 /de/ https://fffmoosburg.de/
+Redirect 301 /en/index.html https://fffmoosburg.de/
+Redirect 301 /en/ https://fffmoosburg.de/
+
+Redirect 301 /de/impressum/index.html https://fffmoosburg.de/impressum/
+Redirect 301 /de/impressum/ https://fffmoosburg.de/impressum/
+Redirect 301 /en/impressum/index.html https://fffmoosburg.de/impressum/
+Redirect 301 /en/impressum/ https://fffmoosburg.de/impressum/
+
+Redirect 301 /de/datenschutz/index.html https://fffmoosburg.de/datenschutz/
+Redirect 301 /de/datenschutz/ https://fffmoosburg.de/datenschutz/
+Redirect 301 /en/datenschutz/index.html https://fffmoosburg.de/datenschutz/
+Redirect 301 /en/datenschutz/ https://fffmoosburg.de/datenschutz/
+
+Redirect 301 /de/publicsharepics/index.html https://fffmoosburg.de/sharepics
+Redirect 301 /de/publicsharepics/ https://fffmoosburg.de/sharepics
+Redirect 301 /en/publicsharepics/index.html https://fffmoosburg.de/sharepics
+Redirect 301 /en/publicsharepics/ https://fffmoosburg.de/sharepics
