@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFF Moosburg - Datenschutz</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="194x194" href="../favicon-194x194.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+    <link rel="mask-icon" href="../safari-pinned-tab.svg" color="#1da64a">
+    <meta name="msapplication-TileColor" content="#00a300">
+    <meta name="msapplication-TileImage" content="../mstile-144x144.png">
+    <meta name="theme-color" content="#1da64a">
+    <link rel="stylesheet" href="../dist/global/style/style.compiled.css">
+    <script defer src="../dist/global/friconix.js"></script>
+</head>
+
+<body class="bg-slate-800 font-jost overflow-x-hidden">
+
+    <div class="relative bg-slate-100 text-fffdunkelgruen">
+        <div class="mx-auto max-w-7xl px-6">
+            <div
+                class="flex items-center justify-between text-fffdunkelgruen border-b-2 border-gray-100 py-6 mdlg:justify-start mdlg:space-x-10">
+                <div class="flex justify-start lg:w-0 lg:flex-1">
+                    <a href="#">
+                        <span class="sr-only">Fridays For Future Moosburg</span>
+                        <picture class="h-20 w-20 sm:h-18 sm:w-18 md:h-14 md:w-14 lg:h-16 lg:w-16">
+                            <source srcset="../dist/global/logo/dunkelgruen/90x.webp" type="image/webp">
+                            <source srcset="../dist/global/logo/dunkelgruen/90x.png" type="image/png">
+                            <img class="h-20 w-20 sm:h-18 sm:w-18 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                                src="../dist/global/logo/dunkelgruen/90x.png" alt="">
+                        </picture>
+                    </a>
+                </div>
+                <div class="-my-2 -mr-2 mdlg:hidden">
+                    <button type="button" id="mobile-menu-open"
+                        class="inline-flex items-center justify-center rounded-md bg-slate-100 p-2 text-fffdunkelgruen hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fffhellgruen"
+                        aria-expanded="false">
+                        <span class="sr-only">Open menu</span>
+                        <!-- Heroicon name: outline/bars-3 -->
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                    </button>
+                </div>
+                <nav class="hidden space-x-10 mdlg:flex">
+
+                    <a href="../#home" class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen">Home</a>
+                    <a href="../#ueber-uns"
+                        class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen">Über&nbsp;Uns</a>
+
+                    <div class="relative">
+                        <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                        <button id="forderungen-dropdown-button" type="button"
+                            class="text-fffdunkelgruen group inline-flex items-center rounded-md bg-slate-100 text-lg font-medium hover:text-fffhellgruen focus:outline-none focus:ring-2 focus:ring-fffhellgruen focus:ring-offset-2 inactive"
+                            aria-expanded="false">
+                            <span>Forderungen</span>
+                            <!--
+                                      Heroicon name: mini/chevron-down
+                        
+                                      Item active: "text-gray-600", Item inactive: "text-gray-400"
+                                    -->
+                            <svg class="text-fffdunkelgruen ml-2 h-5 w-5 group-hover:text-gray-500"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+
+                        <!--
+                                    'Foderungen' flyout menu, show/hide based on flyout menu state.
+                        
+                                    Entering: "transition ease-out duration-200"
+                                      From: "opacity-0 translate-y-1"
+                                      To: "opacity-100 translate-y-0"
+                                    Leaving: "transition ease-in duration-150"
+                                      From: "opacity-100 translate-y-0"
+                                      To: "opacity-0 translate-y-1"
+                                  -->
+                        <div id="forderungen-dropdown"
+                            class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 invisible">
+                            <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                                <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                                    <a href="../#forderungen-de"
+                                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                                        <!-- Heroicon name: outline/chart-bar -->
+                                        <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
+                                        </svg>
+
+                                        <div class="ml-4">
+                                            <p class="text-lg font-medium text-gray-900">Bundesweite Forderungen</p>
+                                            <p class="mt-1 text-sm text-gray-500">Überblick über die Bundesweiten
+                                                Forderungen von FFF.</p>
+                                        </div>
+                                    </a>
+
+                                    <a href="../#forderungen-lokal"
+                                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                                        <!-- Heroicon name: outline/cursor-arrow-rays -->
+                                        <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                            stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                                        </svg>
+
+                                        <div class="ml-4">
+                                            <p class="text-lg font-medium text-gray-900">Lokale Forderungen</p>
+                                            <p class="mt-1 text-sm text-gray-500">Unsere Forderungen für Moosburg und
+                                                Umgebung.</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
+                                    <div class="flow-root">
+                                        <a href="https://fridaysforfuture.de/forderungen/"
+                                            class="-m-3 flex items-center rounded-md p-3 text-lg font-medium text-gray-900 hover:bg-gray-100">
+                                            <!-- Heroicon name: outline/play -->
+                                            <svg class="h-6 w-6 flex-shrink-0 text-gray-400"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                                            </svg>
+
+                                            <span class="ml-3">Bundesorga Forderungen</span>
+                                        </a>
+                                    </div>
+
+                                    <div class="flow-root">
+                                        <a href="https://fridaysforfuture.de/studie/"
+                                            class="-m-3 flex items-center rounded-md p-3 text-lg font-medium text-gray-900 hover:bg-gray-100">
+                                            <!-- Heroicon name: outline/phone -->
+                                            <svg class="h-6 w-6 flex-shrink-0 text-gray-400"
+                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                                stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                                <path stroke-linecap="round" stroke-linejoin="round"
+                                                    d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                                            </svg>
+
+                                            <span class="ml-3">FFF-Studie</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="../#aktionen"
+                        class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen">Aktionen</a>
+
+                    <a href="../#kontakt"
+                        class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen">Kontakt</a>
+                </nav>
+                <div class="hidden items-center justify-end mdlg:flex mdlg:flex-1 lg:w-0">
+
+                    <a href="../sharepics/"
+                        class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-fffrot px-4 py-2 text-base font-bold text-white hover:bg-red-700 shadow-neumorphism-light hover:shadow-neumorphism-light-hov">Sharepics!</a>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        Mobile menu, show/hide based on mobile menu state.
+    
+        Entering: "duration-200 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+        <div id="mobile-menu"
+            class="absolute inset-x-0 top-0 origin-top-right transform p-2 transition mdlg:hidden invisible">
+            <div class="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                <div class="px-5 pt-5 pb-6">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <picture class="h-8 w-auto">
+                                <source srcset="../dist/global/logo/dunkelgruen/90x.webp" type="image/webp">
+                                <source srcset="../dist/global/logo/dunkelgruen/90x.png" type="image/png">
+                                <img class="h-8 w-auto" src="../dist/global/logo/dunkelgruen/90x.png" alt="">
+                            </picture>
+                        </div>
+                        <div class="-mr-2">
+                            <button id="mobile-menu-close" type="button"
+                                class="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-fffhellgruen">
+                                <span class="sr-only">Close menu</span>
+                                <!-- Heroicon name: outline/x-mark -->
+                                <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <nav class="grid gap-y-8">
+                            <a href="../#home" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                                <!-- Heroicon name: outline/chart-bar -->
+                                <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                                </svg>
+
+                                <span class="ml-3 text-base font-medium text-gray-900">Home</span>
+                            </a>
+
+                            <a href="../#ueber-uns" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                                <!-- Heroicon name: outline/cursor-arrow-rays -->
+                                <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                                </svg>
+
+                                <span class="ml-3 text-base font-medium text-gray-900">Über&nbsp;Uns</span>
+                            </a>
+
+                            <a href="../#forderungen" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                                <!-- Heroicon name: outline/shield-check -->
+                                <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M12 9v3.75m0-10.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.75c0 5.592 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.57-.598-3.75h-.152c-3.196 0-6.1-1.249-8.25-3.286zm0 13.036h.008v.008H12v-.008z" />
+                                </svg>
+                                <span class="ml-3 text-base font-medium text-gray-900">Forderungen</span>
+                            </a>
+
+                            <a href="../#aktionen" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                                <!-- Heroicon name: outline/squares-2x2 -->
+                                <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 110-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 01-1.44-4.282m3.102.069a18.03 18.03 0 01-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 018.835 2.535M10.34 6.66a23.847 23.847 0 008.835-2.535m0 0A23.74 23.74 0 0018.795 3m.38 1.125a23.91 23.91 0 011.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 001.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 010 3.46" />
+                                </svg>
+                                <span class="ml-3 text-base font-medium text-gray-900">Aktionen</span>
+                            </a>
+
+                            <a href="../#kontakt" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                                <!-- Heroicon name: outline/arrow-path -->
+                                <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
+                                </svg>
+
+                                <span class="ml-3 text-base font-medium text-gray-900">Kontakt</span>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="space-y-0 py-3 px-5">
+                    <div class="grid grid-cols-2 gap-y-4 gap-x-8">
+                    </div>
+                    <div>
+                        <a href="../sharepics/"
+                            class="flex w-full items-center justify-center rounded-md border border-transparent bg-fffrot px-4 py-2 text-base font-bold text-white shadow-sm hover:bg-indigo-700">Sharepics!</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="home"
+        class="text-center mx-4 my-12 lg:mx-24 lg:my-24 py-36 px-10 rounded-2xl bg-fffhellblau scroll-m-4 shadow-neumorphism">
+        <h1><span class="text-5xl mdlg:text-7xl lg:text-8xl font-bold">Fridays For Future</span><br /><span
+                class="mt-5 text-3xl mdlg:text-5xl lg:text-6xl font-semibold pt-3">Ortsgruppe Moosburg</span></h1>
+    </section>
+
+    <section id="datenschutz"
+        class="mx-4 my-12 lg:mx-24 lg:my-24 py-36 px-10 rounded-2xl bg-fffhellgruen scroll-m-4 shadow-neumorphism">
+        <h1 class="text-6xl font-bold mb-4 mt-8">Datenschutzerklärung</h1>
+        <h2 class="text-4xl font-bold mb-4 mt-8">Einleitung</h2>
+        <p class="my-4">Mit der folgenden Datenschutzerklärung möchten wir Sie darüber aufklären, welche Arten Ihrer
+            personenbezogenen Daten (nachfolgend auch kurz als "Daten“ bezeichnet) wir zu welchen Zwecken und in
+            welchem Umfang verarbeiten. Die Datenschutzerklärung
+            gilt für alle von uns durchgeführten Verarbeitungen personenbezogener Daten, sowohl im Rahmen der
+            Erbringung unserer Leistungen als auch insbesondere auf unseren Webseiten, in mobilen Applikationen
+            sowie innerhalb externer Onlinepräsenzen,
+            wie z.B. unserer Social-Media-Profile (nachfolgend zusammenfassend bezeichnet als "Onlineangebot“).
+        </p>
+        <p class="my-4">Die verwendeten Begriffe sind nicht geschlechtsspezifisch.</p>
+        <p class="my-4">Stand: 20. Juli 2021</p>
+        <h2 class="text-4xl font-bold mb-4 mt-8">Inhaltsübersicht</h2>
+        <ul class="index">
+            <li><a class="index-link" href="#m14">Einleitung</a></li>
+            <li><a class="index-link" href="#m3">Verantwortlicher</a></li>
+            <li><a class="index-link" href="#mOverview">Übersicht der Verarbeitungen</a></li>
+            <li><a class="index-link" href="#m13">Maßgebliche Rechtsgrundlagen</a></li>
+            <li><a class="index-link" href="#m27">Sicherheitsmaßnahmen</a></li>
+            <li><a class="index-link" href="#m24">Datenverarbeitung in Drittländern</a></li>
+            <li><a class="index-link" href="#m225">Bereitstellung des Onlineangebotes und Webhosting</a></li>
+            <li><a class="index-link" href="#m263">Webanalyse, Monitoring und Optimierung</a></li>
+            <li><a class="index-link" href="#m136">Präsenzen in sozialen Netzwerken (Social Media)</a></li>
+            <li><a class="index-link" href="#m328">Plugins und eingebettete Funktionen sowie Inhalte</a></li>
+            <li><a class="index-link" href="#m15">Änderung und Aktualisierung der Datenschutzerklärung</a></li>
+            <li><a class="index-link" href="#m42">Begriffsdefinitionen</a></li>
+        </ul>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="m3">Verantwortlicher</h2>
+        <p class="my-4">William Reed, Fridays For Future Moosburg<br>Am Mühlbachbogen 44 F<br>85368 Moosburg</p>
+        <p class="my-4">E-Mail-Adresse: <a href="mailto:moosburg@fridaysforfuture.is">moosburg@fridaysforfuture.is</a>.
+        </p>
+        <p class="my-4">Impressum: <a href="https://fffmoosburg.de/impressum/"
+                target="_blank">https://fffmoosburg.de/impressum/</a>.</p>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="mOverview">Übersicht der Verarbeitungen</h2>
+        <p class="my-4">Die nachfolgende Übersicht fasst die Arten der verarbeiteten Daten und die Zwecke ihrer
+            Verarbeitung
+            zusammen und verweist auf die betroffenen Personen.</p>
+        <h3 class="text-3xl font-bold mb-4 mt-8">Arten der verarbeiteten Daten</h3>
+        <ul class="list-disc list-inside ml-4">
+            <li>Inhaltsdaten (z.B. Eingaben in Onlineformularen).</li>
+            <li>Kontaktdaten (z.B. E-Mail, Telefonnummern).</li>
+            <li>Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).</li>
+            <li>Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten).</li>
+        </ul>
+        <h3 class="text-3xl font-bold mb-4 mt-8">Kategorien betroffener Personen</h3>
+        <ul class="list-disc list-inside ml-4">
+            <li>Kommunikationspartner.</li>
+            <li>Nutzer (z.B. Webseitenbesucher, Nutzer von Onlinediensten).</li>
+        </ul>
+        <h3 class="text-3xl font-bold mb-4 mt-8">Zwecke der Verarbeitung</h3>
+        <ul class="list-disc list-inside ml-4">
+            <li>Bereitstellung unseres Onlineangebotes und Nutzerfreundlichkeit.</li>
+            <li>Direktmarketing (z.B. per E-Mail oder postalisch).</li>
+            <li>Feedback (z.B. Sammeln von Feedback via Online-Formular).</li>
+            <li>Marketing.</li>
+            <li>Kontaktanfragen und Kommunikation.</li>
+            <li>Profile mit nutzerbezogenen Informationen (Erstellen von Nutzerprofilen).</li>
+            <li>Erbringung vertraglicher Leistungen und Kundenservice.</li>
+        </ul>
+        <h3 class="text-3xl font-bold mb-4 mt-8" id="m13">Maßgebliche Rechtsgrundlagen</h3>
+        <p class="my-4">Im Folgenden erhalten Sie eine Übersicht der Rechtsgrundlagen der DSGVO, auf deren Basis wir
+            personenbezogene Daten verarbeiten. Bitte nehmen Sie zur Kenntnis, dass neben den Regelungen der
+            DSGVO nationale Datenschutzvorgaben in Ihrem
+            bzw. unserem Wohn- oder Sitzland gelten können. Sollten ferner im Einzelfall speziellere
+            Rechtsgrundlagen maßgeblich sein, teilen wir Ihnen diese in der Datenschutzerklärung mit.</p>
+        <ul class="list-disc list-inside ml-4">
+            <li><strong>Einwilligung (Art. 6 Abs. 1 S. 1 lit. a. DSGVO)</strong> - Die betroffene Person hat
+                ihre Einwilligung in die Verarbeitung der sie betreffenden personenbezogenen Daten für einen
+                spezifischen Zweck oder mehrere bestimmte Zwecke
+                gegeben.
+            </li>
+            <li><strong>Vertragserfüllung und vorvertragliche Anfragen (Art. 6 Abs. 1 S. 1 lit. b.
+                    DSGVO)</strong> - Die Verarbeitung ist für die Erfüllung eines Vertrags, dessen
+                Vertragspartei die betroffene Person ist, oder zur Durchführung vorvertraglicher Maßnahmen
+                erforderlich, die auf Anfrage der betroffenen Person
+                erfolgen.
+            </li>
+            <li><strong>Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO)</strong> - Die Verarbeitung
+                ist zur Wahrung der berechtigten Interessen des Verantwortlichen oder eines Dritten
+                erforderlich, sofern nicht die Interessen oder Grundrechte
+                und Grundfreiheiten der betroffenen Person, die den Schutz personenbezogener Daten erfordern,
+                überwiegen.
+            </li>
+        </ul>
+        <p class="my-4"><strong>Nationale Datenschutzregelungen in Deutschland</strong>: Zusätzlich zu den
+            Datenschutzregelungen der Datenschutz-Grundverordnung gelten nationale Regelungen zum Datenschutz in
+            Deutschland. Hierzu gehört insbesondere das Gesetz
+            zum Schutz vor Missbrauch personenbezogener Daten bei der Datenverarbeitung (Bundesdatenschutzgesetz
+            – BDSG). Das BDSG enthält insbesondere Spezialregelungen zum Recht auf Auskunft, zum Recht auf
+            Löschung, zum Widerspruchsrecht, zur
+            Verarbeitung besonderer Kategorien personenbezogener Daten, zur Verarbeitung für andere Zwecke und
+            zur Übermittlung sowie automatisierten Entscheidungsfindung im Einzelfall einschließlich Profiling.
+            Des Weiteren regelt es die Datenverarbeitung
+            für Zwecke des Beschäftigungsverhältnisses (§ 26 BDSG), insbesondere im Hinblick auf die Begründung,
+            Durchführung oder Beendigung von Beschäftigungsverhältnissen sowie die Einwilligung von
+            Beschäftigten. Ferner können Landesdatenschutzgesetze
+            der einzelnen Bundesländer zur Anwendung gelangen.
+        </p>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="m27">Sicherheitsmaßnahmen</h2>
+        <p class="my-4">Wir treffen nach Maßgabe der gesetzlichen Vorgaben unter Berücksichtigung des Stands der
+            Technik, der
+            Implementierungskosten und der Art, des Umfangs, der Umstände und der Zwecke der Verarbeitung sowie
+            der unterschiedlichen Eintrittswahrscheinlichkeiten
+            und des Ausmaßes der Bedrohung der Rechte und Freiheiten natürlicher Personen geeignete technische
+            und organisatorische Maßnahmen, um ein dem Risiko angemessenes Schutzniveau zu gewährleisten.
+        </p>
+        <p class="my-4">Zu den Maßnahmen gehören insbesondere die Sicherung der Vertraulichkeit, Integrität und
+            Verfügbarkeit
+            von Daten durch Kontrolle des physischen und elektronischen Zugangs zu den Daten als auch des sie
+            betreffenden Zugriffs, der Eingabe,
+            der Weitergabe, der Sicherung der Verfügbarkeit und ihrer Trennung. Des Weiteren haben wir Verfahren
+            eingerichtet, die eine Wahrnehmung von Betroffenenrechten, die Löschung von Daten und Reaktionen auf
+            die Gefährdung der Daten gewährleisten.
+            Ferner berücksichtigen wir den Schutz personenbezogener Daten bereits bei der Entwicklung bzw.
+            Auswahl von Hardware, Software sowie Verfahren entsprechend dem Prinzip des Datenschutzes, durch
+            Technikgestaltung und durch datenschutzfreundliche
+            Voreinstellungen.
+        </p>
+        <p class="my-4"><strong>SSL-Verschlüsselung (https)</strong>: Um Ihre via unserem Online-Angebot übermittelten
+            Daten
+            zu schützen, nutzen wir eine SSL-Verschlüsselung. Sie erkennen derart verschlüsselte Verbindungen an
+            dem Präfix https:// in der Adresszeile
+            Ihres Browsers.</p>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="m24">Datenverarbeitung in Drittländern</h2>
+        <p class="my-4">Sofern wir Daten in einem Drittland (d.h., außerhalb der Europäischen Union (EU), des
+            Europäischen
+            Wirtschaftsraums (EWR)) verarbeiten oder die Verarbeitung im Rahmen der Inanspruchnahme von Diensten
+            Dritter oder der Offenlegung bzw. Übermittlung
+            von Daten an andere Personen, Stellen oder Unternehmen stattfindet, erfolgt dies nur im Einklang mit
+            den gesetzlichen Vorgaben. </p>
+        <p class="my-4">Vorbehaltlich ausdrücklicher Einwilligung oder vertraglich oder gesetzlich erforderlicher
+            Übermittlung verarbeiten oder lassen wir die Daten nur in Drittländern mit einem anerkannten
+            Datenschutzniveau, vertraglichen Verpflichtung durch
+            sogenannte Standardschutzklauseln der EU-Kommission, beim Vorliegen von Zertifizierungen oder
+            verbindlicher internen Datenschutzvorschriften verarbeiten (Art. 44 bis 49 DSGVO, Informationsseite
+            der EU-Kommission: <a
+                href="https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de"
+                target="_blank">https://ec.europa.eu/info/law/law-topic/data-protection/international-dimension-data-protection_de</a>).
+        </p>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="m225">Bereitstellung des Onlineangebotes und Webhosting</h2>
+        <p class="my-4">Um unser Onlineangebot sicher und effizient bereitstellen zu können, nehmen wir die Leistungen
+            von
+            einem oder mehreren Webhosting-Anbietern in Anspruch, von deren Servern (bzw. von ihnen verwalteten
+            Servern) das Onlineangebot abgerufen
+            werden kann. Zu diesen Zwecken können wir Infrastruktur- und Plattformdienstleistungen,
+            Rechenkapazität, Speicherplatz und Datenbankdienste sowie Sicherheitsleistungen und technische
+            Wartungsleistungen in Anspruch nehmen.
+        </p>
+        <p class="my-4">Zu den im Rahmen der Bereitstellung des Hostingangebotes verarbeiteten Daten können alle die
+            Nutzer
+            unseres Onlineangebotes betreffenden Angaben gehören, die im Rahmen der Nutzung und der
+            Kommunikation anfallen. Hierzu gehören regelmäßig
+            die IP-Adresse, die notwendig ist, um die Inhalte von Onlineangeboten an Browser ausliefern zu
+            können, und alle innerhalb unseres Onlineangebotes oder von Webseiten getätigten Eingaben.</p>
+        <p class="my-4"><strong>Erhebung von Zugriffsdaten und Logfiles</strong>: Wir selbst (bzw. unser
+            Webhostinganbieter)
+            erheben Daten zu jedem Zugriff auf den Server (sogenannte Serverlogfiles). Zu den Serverlogfiles
+            können die Adresse und Name der abgerufenen
+            Webseiten und Dateien, Datum und Uhrzeit des Abrufs, übertragene Datenmengen, Meldung über
+            erfolgreichen Abruf, Browsertyp nebst Version, das Betriebssystem des Nutzers, Referrer URL (die
+            zuvor besuchte Seite) und im Regelfall IP-Adressen
+            und der anfragende Provider gehören.</p>
+        <p class="my-4">Die Serverlogfiles können zum einen zu Zwecken der Sicherheit eingesetzt werden, z.B., um eine
+            Überlastung der Server zu vermeiden (insbesondere im Fall von missbräuchlichen Angriffen,
+            sogenannten DDoS-Attacken) und zum anderen, um die
+            Auslastung der Server und ihre Stabilität sicherzustellen.</p>
+        <p class="my-4">Unsere Website wird, zu erkennen an der Endung ".github.io", auf Servern von GitHub Pages
+            gehostet.
+            GitHub behält sich das Recht vor Daten über die Zugriffe auf gehostete Website zu speichern und zu
+            verarbeiten, um rechtliche Rahmenbedingungen
+            einzuhalten. Diese Daten umfassen unter anderem Aufzeichnungen der IP-Adressen der Serverzugriffe.
+            Weitere Informationen können Sie der Datenschutzerklärung von GitHub entnehmen: <a
+                href="https://docs.github.com/de/github/site-policy/github-privacy-statement#access-to-private-repositories"
+                target="_blank">https://docs.github.com/de/github/site-policy/github-privacy-statement#access-to-private-repositories</a>
+        </p>
+        <ul class="list-disc list-inside ml-4 m-elements">
+            <li><strong>Verarbeitete Datenarten:</strong> Inhaltsdaten (z.B. Eingaben in Onlineformularen),
+                Nutzungsdaten (z.B. besuchte Webseiten, Interesse an Inhalten, Zugriffszeiten),
+                Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).</li>
+            <li><strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher, Nutzer von
+                Onlinediensten).
+            </li>
+            <li><strong>Zwecke der Verarbeitung:</strong> Bereitstellung unseres Onlineangebotes und
+                Nutzerfreundlichkeit.
+            </li>
+            <li><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO).
+            </li>
+        </ul>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="m263">Webanalyse, Monitoring und Optimierung</h2>
+        <p class="my-4">Die Webanalyse (auch als "Reichweitenmessung" bezeichnet) dient der Auswertung der
+            Besucherströme
+            unseres Onlineangebotes und kann Verhalten, Interessen oder demographische Informationen zu den
+            Besuchern, wie z.B. das Alter oder das Geschlecht,
+            als pseudonyme Werte umfassen. Mit Hilfe der Reichweitenanalyse können wir z.B. erkennen, zu welcher
+            Zeit unser Onlineangebot oder dessen Funktionen oder Inhalte am häufigsten genutzt werden oder zur
+            Wiederverwendung einladen. Ebenso
+            können wir nachvollziehen, welche Bereiche der Optimierung bedürfen. </p>
+        <p class="my-4">Neben der Webanalyse können wir auch Testverfahren einsetzen, um z.B. unterschiedliche Versionen
+            unseres Onlineangebotes oder seiner Bestandteile zu testen und optimieren.</p>
+        <p class="my-4">Zu diesen Zwecken können sogenannte Nutzerprofile angelegt und in einer Datei (sogenannte
+            "Cookie")
+            gespeichert oder ähnliche Verfahren mit dem gleichen Zweck genutzt werden. Zu diesen Angaben können
+            z.B. betrachtete Inhalte, besuchte
+            Webseiten und dort genutzte Elemente und technische Angaben, wie der verwendete Browser, das
+            verwendete Computersystem sowie Angaben zu Nutzungszeiten gehören. Sofern Nutzer in die Erhebung
+            ihrer Standortdaten eingewilligt haben, können
+            je nach Anbieter auch diese verarbeitet werden.</p>
+        <p class="my-4">Es werden ebenfalls die IP-Adressen der Nutzer gespeichert. Jedoch nutzen wir ein
+            IP-Masking-Verfahren (d.h., Pseudonymisierung durch Kürzung der IP-Adresse) zum Schutz der Nutzer.
+            Generell werden die im Rahmen von Webanalyse, A/B-Testings
+            und Optimierung keine Klardaten der Nutzer (wie z.B. E-Mail-Adressen oder Namen) gespeichert,
+            sondern Pseudonyme. D.h., wir als auch die Anbieter der eingesetzten Software kennen nicht die
+            tatsächliche Identität der Nutzer, sondern
+            nur den für Zwecke der jeweiligen Verfahren in deren Profilen gespeicherten Angaben.
+        </p>
+        <p class="my-4"><strong>Hinweise zu Rechtsgrundlagen:</strong> Sofern wir die Nutzer um deren Einwilligung in
+            den
+            Einsatz der Drittanbieter bitten, ist die Rechtsgrundlage der Verarbeitung von Daten die
+            Einwilligung. Ansonsten werden die Daten der Nutzer
+            auf Grundlage unserer berechtigten Interessen (d.h. Interesse an effizienten, wirtschaftlichen und
+            empfängerfreundlichen Leistungen) verarbeitet. In diesem Zusammenhang möchten wir Sie auch auf die
+            Informationen zur Verwendung von
+            Cookies in dieser Datenschutzerklärung hinweisen.</p>
+        <ul class="list-disc list-inside ml-4 m-elements">
+            <li><strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z.B. besuchte Webseiten, Interesse an
+                Inhalten, Zugriffszeiten), Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).
+            </li>
+            <li><strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher, Nutzer von
+                Onlinediensten).
+            </li>
+            <li><strong>Zwecke der Verarbeitung:</strong> Reichweitenmessung (z.B. Zugriffsstatistiken,
+                Erkennung wiederkehrender Besucher), Profile mit nutzerbezogenen Informationen (Erstellen von
+                Nutzerprofilen).
+            </li>
+            <li><strong>Sicherheitsmaßnahmen:</strong> IP-Masking (Pseudonymisierung der IP-Adresse).</li>
+            <li><strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1 lit. a. DSGVO), Berechtigte
+                Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO).</li>
+        </ul>
+        <p class="my-4"><strong>Eingesetzte Dienste und Diensteanbieter:</strong></p>
+        <ul class="list-disc list-inside ml-4 m-elements">
+            <li><strong>Google Analytics:</strong> Reichweitenmessung und Webanalyse; Dienstanbieter: Google
+                Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, Mutterunternehmen: Google LLC,
+                1600 Amphitheatre Parkway, Mountain View, CA
+                94043, USA; Website: <a href="https://marketingplatform.google.com/intl/de/about/analytics/"
+                    target="_blank">https://marketingplatform.google.com/intl/de/about/analytics/</a>;
+                Datenschutzerklärung: <a href="https://policies.google.com/privacy"
+                    target="_blank">https://policies.google.com/privacy</a>.</li>
+            <li><strong>Google Tag Manager:</strong> Google Tag Manager ist eine Lösung, mit der wir sog.
+                Website-Tags über eine Oberfläche verwalten und so andere Dienste in unser Onlineangebot
+                einbinden können (hierzu wird auf weitere Angaben in
+                dieser Datenschutzerklärung verwiesen). Mit dem Tag Manager selbst (welches die Tags
+                implementiert) werden daher z. B. noch keine Profile der Nutzer erstellt oder Cookies
+                gespeichert. Google erfährt lediglich die IP-Adresse des
+                Nutzers, was notwendig ist, um den Google Tag Manager auszuführen. Dienstanbieter: Google
+                Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, Mutterunternehmen: Google LLC,
+                1600 Amphitheatre Parkway, Mountain View,
+                CA 94043, USA; Website: <a href="https://marketingplatform.google.com"
+                    target="_blank">https://marketingplatform.google.com</a>; Datenschutzerklärung: <a
+                    href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a>.
+            </li>
+        </ul>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="m136">Präsenzen in sozialen Netzwerken (Social Media)</h2>
+        <p class="my-4">Wir unterhalten Onlinepräsenzen innerhalb sozialer Netzwerke und verarbeiten in diesem Rahmen
+            Daten
+            der Nutzer, um mit den dort aktiven Nutzern zu kommunizieren oder um Informationen über uns
+            anzubieten.
+        </p>
+        <p class="my-4">Wir weisen darauf hin, dass dabei Daten der Nutzer außerhalb des Raumes der Europäischen Union
+            verarbeitet werden können. Hierdurch können sich für die Nutzer Risiken ergeben, weil so z.B. die
+            Durchsetzung der Rechte der Nutzer erschwert
+            werden könnte.</p>
+        <p class="my-4">Ferner werden die Daten der Nutzer innerhalb sozialer Netzwerke im Regelfall für
+            Marktforschungs- und
+            Werbezwecke verarbeitet. So können z.B. anhand des Nutzungsverhaltens und sich daraus ergebender
+            Interessen der Nutzer Nutzungsprofile
+            erstellt werden. Die Nutzungsprofile können wiederum verwendet werden, um z.B. Werbeanzeigen
+            innerhalb und außerhalb der Netzwerke zu schalten, die mutmaßlich den Interessen der Nutzer
+            entsprechen. Zu diesen Zwecken werden im Regelfall
+            Cookies auf den Rechnern der Nutzer gespeichert, in denen das Nutzungsverhalten und die Interessen
+            der Nutzer gespeichert werden. Ferner können in den Nutzungsprofilen auch Daten unabhängig der von
+            den Nutzern verwendeten Geräte gespeichert
+            werden (insbesondere, wenn die Nutzer Mitglieder der jeweiligen Plattformen sind und bei diesen
+            eingeloggt sind).</p>
+        <p class="my-4">Für eine detaillierte Darstellung der jeweiligen Verarbeitungsformen und der
+            Widerspruchsmöglichkeiten (Opt-Out) verweisen wir auf die Datenschutzerklärungen und Angaben der
+            Betreiber der jeweiligen Netzwerke.</p>
+        <p class="my-4">Auch im Fall von Auskunftsanfragen und der Geltendmachung von Betroffenenrechten weisen wir
+            darauf
+            hin, dass diese am effektivsten bei den Anbietern geltend gemacht werden können. Nur die Anbieter
+            haben jeweils Zugriff auf die Daten der
+            Nutzer und können direkt entsprechende Maßnahmen ergreifen und Auskünfte geben. Sollten Sie dennoch
+            Hilfe benötigen, dann können Sie sich an uns wenden.</p>
+        <ul class="list-disc list-inside ml-4 m-elements">
+            <li><strong>Verarbeitete Datenarten:</strong> Kontaktdaten (z.B. E-Mail, Telefonnummern),
+                Inhaltsdaten (z.B. Eingaben in Onlineformularen), Nutzungsdaten (z.B. besuchte Webseiten,
+                Interesse an Inhalten, Zugriffszeiten), Meta-/Kommunikationsdaten
+                (z.B. Geräte-Informationen, IP-Adressen).</li>
+            <li><strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher, Nutzer von
+                Onlinediensten).
+            </li>
+            <li><strong>Zwecke der Verarbeitung:</strong> Kontaktanfragen und Kommunikation, Feedback (z.B.
+                Sammeln von Feedback via Online-Formular), Marketing.</li>
+            <li><strong>Rechtsgrundlagen:</strong> Berechtigte Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO).
+            </li>
+        </ul>
+        <p class="my-4"><strong>Eingesetzte Dienste und Diensteanbieter:</strong></p>
+        <ul class="list-disc list-inside ml-4 m-elements">
+            <li><strong>Instagram:</strong> Soziales Netzwerk; Dienstanbieter: Instagram Inc., 1601 Willow Road,
+                Menlo Park, CA, 94025, USA, Mutterunternehmen: Facebook, 1 Hacker Way, Menlo Park, CA 94025,
+                USA; Website: <a href="https://www.instagram.com" target="_blank">https://www.instagram.com</a>;
+                Datenschutzerklärung: <a href="https://instagram.com/about/legal/privacy"
+                    target="_blank">https://instagram.com/about/legal/privacy</a>.</li>
+        </ul>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="m328">Plugins und eingebettete Funktionen sowie Inhalte</h2>
+        <p class="my-4">Wir binden in unser Onlineangebot Funktions- und Inhaltselemente ein, die von den Servern ihrer
+            jeweiligen Anbieter (nachfolgend bezeichnet als "Drittanbieter”) bezogen werden. Dabei kann es sich
+            zum Beispiel um Grafiken, Videos oder Stadtpläne
+            handeln (nachfolgend einheitlich bezeichnet als "Inhalte”).</p>
+        <p class="my-4">Die Einbindung setzt immer voraus, dass die Drittanbieter dieser Inhalte die IP-Adresse der
+            Nutzer
+            verarbeiten, da sie ohne die IP-Adresse die Inhalte nicht an deren Browser senden könnten. Die
+            IP-Adresse ist damit für die Darstellung
+            dieser Inhalte oder Funktionen erforderlich. Wir bemühen uns, nur solche Inhalte zu verwenden, deren
+            jeweilige Anbieter die IP-Adresse lediglich zur Auslieferung der Inhalte verwenden. Drittanbieter
+            können ferner sogenannte Pixel-Tags
+            (unsichtbare Grafiken, auch als "Web Beacons" bezeichnet) für statistische oder Marketingzwecke
+            verwenden. Durch die "Pixel-Tags" können Informationen, wie der Besucherverkehr auf den Seiten
+            dieser Webseite, ausgewertet werden. Die
+            pseudonymen Informationen können ferner in Cookies auf dem Gerät der Nutzer gespeichert werden und
+            unter anderem technische Informationen zum Browser und zum Betriebssystem, zu verweisenden
+            Webseiten, zur Besuchszeit sowie weitere
+            Angaben zur Nutzung unseres Onlineangebotes enthalten als auch mit solchen Informationen aus anderen
+            Quellen verbunden werden.</p>
+        <p class="my-4"><strong>Hinweise zu Rechtsgrundlagen:</strong> Sofern wir die Nutzer um deren Einwilligung in
+            den
+            Einsatz der Drittanbieter bitten, ist die Rechtsgrundlage der Verarbeitung von Daten die
+            Einwilligung. Ansonsten werden die Daten der Nutzer
+            auf Grundlage unserer berechtigten Interessen (d.h. Interesse an effizienten, wirtschaftlichen und
+            empfängerfreundlichen Leistungen) verarbeitet. In diesem Zusammenhang möchten wir Sie auch auf die
+            Informationen zur Verwendung von
+            Cookies in dieser Datenschutzerklärung hinweisen.</p>
+        <p class="my-4"><strong>Instagram-Plugins und -Inhalte</strong>: Wir sind gemeinsam mit Facebook Irland Ltd. für
+            die
+            Erhebung oder den Erhalt im Rahmen einer Übermittlung (jedoch nicht die weitere Verarbeitung) von
+            "Event-Daten", die Facebook mittels
+            Funktionen von Instagram (z. B. Einbettungsfunktionen für Inhalte), die auf unserem Onlineangebot
+            ausgeführt werden, erhebt oder im Rahmen einer Übermittlung zu folgenden Zwecken erhält, gemeinsam
+            verantwortlich: a) Anzeige von Inhalten
+            sowie Werbeinformationen, die den mutmaßlichen Interessen der Nutzer entsprechen; b) Zustellung
+            kommerzieller und transaktionsbezogener Nachrichten (z. B. Ansprache von Nutzern via
+            Facebook-Messenger); c) Verbesserung der Anzeigenauslieferung
+            und Personalisierung von Funktionen und Inhalten (z. B. Verbesserung der Erkennung, welche Inhalte
+            oder Werbeinformationen mutmaßlich den Interessen der Nutzer entsprechen). Wir haben mit Facebook
+            eine spezielle Vereinbarung abgeschlossen
+            ("Zusatz für Verantwortliche", <a href="https://www.facebook.com/legal/controller_addendum"
+                target="_blank">https://www.facebook.com/legal/controller_addendum</a>), in der insbesondere
+            geregelt wird, welche Sicherheitsmaßnahmen Facebook
+            beachten muss (<a href="https://www.facebook.com/legal/terms/data_security_terms"
+                target="_blank">https://www.facebook.com/legal/terms/data_security_terms</a>) und in der
+            Facebook sich bereit erklärt hat die Betroffenenrechte zu erfüllen
+            (d. h. Nutzer können z. B. Auskünfte oder Löschungsanfragen direkt an Facebook richten). Hinweis:
+            Wenn Facebook uns Messwerte, Analysen und Berichte bereitstellt (die aggregiert sind, d. h. keine
+            Angaben zu einzelnen Nutzern erhalten
+            und für uns anonym sind), dann erfolgt diese Verarbeitung nicht im Rahmen der gemeinsamen
+            Verantwortlichkeit, sondern auf Grundlage eines Auftragsverarbeitungsvertrages
+            ("Datenverarbeitungsbedingungen ", <a href="https://www.facebook.com/legal/terms/dataprocessing"
+                target="_blank">https://www.facebook.com/legal/terms/dataprocessing</a>) , der
+            "Datensicherheitsbedingungen" (
+            <a href="https://www.facebook.com/legal/terms/data_security_terms"
+                target="_blank">https://www.facebook.com/legal/terms/data_security_terms</a>) sowie im Hinblick
+            auf die Verarbeitung in den USA auf Grundlage von Standardvertragsklauseln
+            ("Facebook-EU-Datenübermittlungszusatz, <a href="https://www.facebook.com/legal/EU_data_transfer_addendum"
+                target="_blank">https://www.facebook.com/legal/EU_data_transfer_addendum</a>). Die Rechte der
+            Nutzer (insbesondere auf Auskunft,
+            Löschung, Widerspruch und Beschwerde bei zuständiger Aufsichtsbehörde), werden durch die
+            Vereinbarungen mit Facebook nicht eingeschränkt.
+        </p>
+        <ul class="list-disc list-inside ml-4 m-elements">
+            <li><strong>Verarbeitete Datenarten:</strong> Nutzungsdaten (z.B. besuchte Webseiten, Interesse an
+                Inhalten, Zugriffszeiten), Meta-/Kommunikationsdaten (z.B. Geräte-Informationen, IP-Adressen).
+            </li>
+            <li><strong>Betroffene Personen:</strong> Nutzer (z.B. Webseitenbesucher, Nutzer von
+                Onlinediensten).
+            </li>
+            <li><strong>Zwecke der Verarbeitung:</strong> Bereitstellung unseres Onlineangebotes und
+                Nutzerfreundlichkeit, Marketing, Profile mit nutzerbezogenen Informationen (Erstellen von
+                Nutzerprofilen), Erbringung vertraglicher Leistungen und
+                Kundenservice.
+            </li>
+            <li><strong>Rechtsgrundlagen:</strong> Einwilligung (Art. 6 Abs. 1 S. 1 lit. a. DSGVO), Berechtigte
+                Interessen (Art. 6 Abs. 1 S. 1 lit. f. DSGVO), Vertragserfüllung und vorvertragliche Anfragen
+                (Art. 6 Abs. 1 S. 1 lit. b. DSGVO).
+            </li>
+        </ul>
+        <p class="my-4"><strong>Eingesetzte Dienste und Diensteanbieter:</strong></p>
+        <ul class="list-disc list-inside ml-4 m-elements">
+            <li><strong>Instagram-Plugins und -Inhalte:</strong> Instagram Plugins und -Inhalte - Hierzu können
+                z.B. Inhalte wie Bilder, Videos oder Texte und Schaltflächen gehören, mit denen Nutzer Inhalte
+                dieses Onlineangebotes innerhalb von Instagram
+                teilen können. Dienstanbieter: <a href="https://www.instagram.com"
+                    target="_blank">https://www.instagram.com</a>, Instagram Inc., 1601 Willow Road, Menlo Park,
+                CA, 94025, USA; Website: <a href="https://www.instagram.com"
+                    target="_blank">https://www.instagram.com</a>;
+                Datenschutzerklärung: <a href="https://instagram.com/about/legal/privacy"
+                    target="_blank">https://instagram.com/about/legal/privacy</a>.</li>
+            <li><strong>OpenStreetMap:</strong> Wir binden die Landkarten des Dienstes "OpenStreetMap" ein, die
+                auf Grundlage der Open Data Commons Open Database Lizenz (ODbL) durch die OpenStreetMap
+                Foundation (OSMF) angeboten werden. Die Daten der
+                Nutzer werden durch OpenStreetMap ausschließlich zu Zwecken der Darstellung der Kartenfunktionen
+                und zur Zwischenspeicherung der gewählten Einstellungen verwendet. Zu diesen Daten können
+                insbesondere IP-Adressen und Standortdaten
+                der Nutzer gehören, die jedoch nicht ohne deren Einwilligung (im Regelfall im Rahmen der
+                Einstellungen ihrer Mobilgeräte vollzogen) erhoben werden. Dienstanbieter: OpenStreetMap
+                Foundation (OSMF); Website: <a href="https://www.openstreetmap.de"
+                    target="_blank">https://www.openstreetmap.de</a>; Datenschutzerklärung: <a
+                    href="https://wiki.openstreetmap.org/wiki/Privacy_Policy"
+                    target="_blank">https://wiki.openstreetmap.org/wiki/Privacy_Policy</a>.</li>
+            <li><strong>YouTube-Videos:</strong> Videoinhalte; YouTube wird über die Domain <a
+                    href="https://www.youtube-nocookie.com" target="_blank">https://www.youtube-nocookie.com</a>
+                im sogenannten "Erweiterten Datenschutzmodus" eingebunden,
+                wodurch keine Cookies zu Nutzeraktivitäten erhoben werden, um die Videowiedergabe zu
+                personalisieren. Dennoch können Angaben zur Interaktion der Nutzer mit dem Video (z.B. Merken
+                der letzten Wiedergabestelle), gespeichert werden;
+                Dienstanbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland,
+                Mutterunternehmen: Google LLC, 1600 Amphitheatre Parkway, Mountain View, CA 94043, USA; Website:
+                <a href="https://www.youtube.com" target="_blank">https://www.youtube.com</a>;
+                Datenschutzerklärung: <a href="https://policies.google.com/privacy"
+                    target="_blank">https://policies.google.com/privacy</a>.
+            </li>
+        </ul>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="m15">Änderung und Aktualisierung der Datenschutzerklärung</h2>
+        <p class="my-4">Wir bitten Sie, sich regelmäßig über den Inhalt unserer Datenschutzerklärung zu informieren. Wir
+            passen die Datenschutzerklärung an, sobald die Änderungen der von uns durchgeführten
+            Datenverarbeitungen dies erforderlich machen. Wir informieren
+            Sie, sobald durch die Änderungen eine Mitwirkungshandlung Ihrerseits (z.B. Einwilligung) oder eine
+            sonstige individuelle Benachrichtigung erforderlich wird.</p>
+        <p class="my-4">Sofern wir in dieser Datenschutzerklärung Adressen und Kontaktinformationen von Unternehmen und
+            Organisationen angeben, bitten wir zu beachten, dass die Adressen sich über die Zeit ändern können
+            und bitten die Angaben vor Kontaktaufnahme
+            zu prüfen.</p>
+        <h2 class="text-4xl font-bold mb-4 mt-8" id="m42">Begriffsdefinitionen</h2>
+        <p class="my-4">In diesem Abschnitt erhalten Sie eine Übersicht über die in dieser Datenschutzerklärung
+            verwendeten
+            Begrifflichkeiten. Viele der Begriffe sind dem Gesetz entnommen und vor allem im Art. 4 DSGVO
+            definiert. Die gesetzlichen Definitionen
+            sind verbindlich. Die nachfolgenden Erläuterungen sollen dagegen vor allem dem Verständnis dienen.
+            Die Begriffe sind alphabetisch sortiert.</p>
+        <ul class="list-disc list-inside ml-4 glossary">
+            <li><strong>Personenbezogene Daten:</strong> "Personenbezogene Daten“ sind alle Informationen, die
+                sich auf eine identifizierte oder identifizierbare natürliche Person (im Folgenden "betroffene
+                Person“) beziehen; als identifizierbar wird
+                eine natürliche Person angesehen, die direkt oder indirekt, insbesondere mittels Zuordnung zu
+                einer Kennung wie einem Namen, zu einer Kennnummer, zu Standortdaten, zu einer Online-Kennung
+                (z.B. Cookie) oder zu einem oder mehreren
+                besonderen Merkmalen identifiziert werden kann, die Ausdruck der physischen, physiologischen,
+                genetischen, psychischen, wirtschaftlichen, kulturellen oder sozialen Identität dieser
+                natürlichen Person sind. </li>
+            <li><strong>Profile mit nutzerbezogenen Informationen:</strong> Die Verarbeitung von "Profilen mit
+                nutzerbezogenen Informationen", bzw. kurz "Profilen" umfasst jede Art der automatisierten
+                Verarbeitung personenbezogener Daten, die darin
+                besteht, dass diese personenbezogenen Daten verwendet werden, um bestimmte persönliche Aspekte,
+                die sich auf eine natürliche Person beziehen (je nach Art der Profilbildung können dazu
+                unterschiedliche Informationen betreffend die
+                Demographie, Verhalten und Interessen, wie z.B. die Interaktion mit Webseiten und deren
+                Inhalten, etc.) zu analysieren, zu bewerten oder, um sie vorherzusagen (z.B. die Interessen an
+                bestimmten Inhalten oder Produkten, das Klickverhalten
+                auf einer Webseite oder den Aufenthaltsort). Zu Zwecken des Profilings werden häufig Cookies und
+                Web-Beacons eingesetzt. </li>
+            <li><strong>Verantwortlicher:</strong> Als "Verantwortlicher“ wird die natürliche oder juristische
+                Person, Behörde, Einrichtung oder andere Stelle, die allein oder gemeinsam mit anderen über die
+                Zwecke und Mittel der Verarbeitung von personenbezogenen
+                Daten entscheidet, bezeichnet. </li>
+            <li><strong>Verarbeitung:</strong> "Verarbeitung" ist jeder mit oder ohne Hilfe automatisierter
+                Verfahren ausgeführte Vorgang oder jede solche Vorgangsreihe im Zusammenhang mit
+                personenbezogenen Daten. Der Begriff reicht weit und umfasst
+                praktisch jeden Umgang mit Daten, sei es das Erheben, das Auswerten, das Speichern, das
+                Übermitteln oder das Löschen. </li>
+        </ul>
+        <p class="seal"><a href="https://datenschutz-generator.de/?l=de"
+                title="Rechtstext von Dr. Schwenke - für weitere Informationen bitte anklicken." target="_blank"
+                rel="noopener noreferrer nofollow">Erstellt mit kostenlosem Datenschutz-Generator.de von Dr.
+                Thomas
+                Schwenke</a>
+        </p>
+    </section>
+
+    <footer
+        class="mx-4 my-12 lg:mx-24 lg:my-24 py-6 px-6 lg:py-12 lg:px-20 rounded-2xl bg-slate-700 scroll-m-4 shadow-neumorphism">
+        <div
+            class="flex flex-wrap lg:flex-nowrap columns-3 lg:columns-3 my-2 text-white text-center items-center content-center">
+            <p class="w-full my-4">
+                <a href="../impressum/">Impressum</a>
+            </p>
+            <p class="w-full my-4">&copy;&nbsp;2023, Fridays&nbsp;For&nbsp;Future&nbsp;Moosburg</p>
+            <p class="w-full my-4">
+                <a href="./#">Datenschutz<ap>
+            </p>
+        </div>
+        <script src="../src/global/js/main.js"></script>
+</body>
+
+</html>
