@@ -28,8 +28,12 @@
                 <div class="flex justify-start lg:w-0 lg:flex-1">
                     <a href="#home">
                         <span class="sr-only">Fridays For Future Moosburg</span>
-                        <img class="h-20 w-20 sm:h-18 sm:w-18 md:h-14 md:w-14 lg:h-16 lg:w-16"
-                            src="../dist/global/logo/dunkelgruen/90x.png" alt="">
+                        <picture class="h-20 w-20 sm:h-18 sm:w-18 md:h-14 md:w-14 lg:h-16 lg:w-16">
+                            <source srcset="../dist/global/logo/dunkelgruen/90x.webp" type="image/webp">
+                            <source srcset="../dist/global/logo/dunkelgruen/90x.png" type="image/png">
+                            <img class="h-20 w-20 sm:h-18 sm:w-18 md:h-14 md:w-14 lg:h-16 lg:w-16"
+                                src="../dist/global/logo/dunkelgruen/90x.png" alt="">
+                        </picture>
                     </a>
                 </div>
                 <div class="-my-2 -mr-2 mdlg:hidden">
@@ -186,7 +190,11 @@
                 <div class="px-5 pt-5 pb-6">
                     <div class="flex items-center justify-between">
                         <div>
-                            <img class="h-8 w-auto" src="../dist/global/logo/dunkelgruen/90x.png" alt="Your Company">
+                            <picture class="h-8 w-auto">
+                                <source srcset="../dist/global/logo/dunkelgruen/90x.webp" type="image/webp">
+                                <source srcset="../dist/global/logo/dunkelgruen/90x.png" type="image/png">
+                                <img class="h-8 w-auto" src="../dist/global/logo/dunkelgruen/90x.png" alt="">
+                            </picture>
                         </div>
                         <div class="-mr-2">
                             <button id="mobile-menu-close" type="button"
@@ -289,17 +297,29 @@
             class="flex flex-row-reverse flex-wrap-reverse columns-1 lg:columns-3 mx-percent3_125 my-2 text-center items-center justify-center justify-content-center content-center">
             <a class="w-percent25 text-3xl my-5 py-2 mx-percent3_125 text-center" href="./20.08/Seid_Bereit_20.08.jpg"
                 download="">
-                <img class="w-full h-auto mx-auto my-auto" src="./20.08/Seid_Bereit_20.08.jpg" alt="Sharepic">
+                <picture class="w-full h-auto mx-auto my-auto">
+                    <source srcset="./20.08/Seid_Bereit_20.08.webp" type="image/webp">
+                    <source srcset="./20.08/Seid_Bereit_20.08.jpg" type="image/jpg">
+                    <img class="w-full h-auto mx-auto my-auto" src="./20.08/Seid_Bereit_20.08.jpg" alt="Sharepic">
+                </picture>
             </a>
             <a class="w-percent25 text-3xl my-5 py-2 mx-percent3_125 text-center" href="./24.09/24.09_Viehmarkt.jpg"
                 download="">
-                <img class="w-full h-auto mx-auto my-auto" src="./24.09/24.09_Viehmarkt.jpg" alt="Sharepic">
+                <picture class="w-full h-auto mx-auto my-auto">
+                    <source srcset="./24.09/24.09_Viehmarkt.webp" type="image/webp">
+                    <source srcset="./24.09/24.09_Viehmarkt.jpg" type="image/jpg">
+                    <img class="w-full h-auto mx-auto my-auto" src="./24.09/24.09_Viehmarkt.jpg" alt="Sharepic">
+                </picture>
             </a>
             <!--
                 VORLAGE:
 
-            <a class="w-percent25 text-3xl my-5 py-2 mx-percent3_125 text-center" href="./folder/image" download="">
-                <img class="w-full h-auto mx-auto my-auto" src="./folder/thumbnail" alt="Sharepic">
+            <a class="w-percent25 text-3xl my-5 py-2 mx-percent3_125 text-center" href="./" download="">
+                <picture class="w-full h-auto mx-auto my-auto">
+                    <source srcset="./" type="image/webp">
+                    <source srcset="./" type="image/">
+                    <img class="w-full h-auto mx-auto my-auto" src="./" alt="Sharepic">
+                </picture>
             </a>
             -->
 
