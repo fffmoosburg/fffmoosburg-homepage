@@ -5,32 +5,32 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <url>
-  <loc>https://fffmoosburg.github.io/de/</loc>
+  <loc>https://fffmoosburg.de/de/</loc>
   <lastmod>2021-12-05T10:43:15+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://fffmoosburg.github.io/de/publicsharepics/</loc>
+  <loc>https://fffmoosburg.de/de/publicsharepics/</loc>
   <lastmod>2021-12-05T10:43:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://fffmoosburg.github.io/de/impressum/</loc>
+  <loc>https://fffmoosburg.de/de/impressum/</loc>
   <lastmod>2021-12-05T10:43:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://fffmoosburg.github.io/en/</loc>
+  <loc>https://fffmoosburg.de/en/</loc>
   <lastmod>2021-12-05T10:43:15+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://fffmoosburg.github.io/en/publicsharepics/</loc>
+  <loc>https://fffmoosburg.de/en/publicsharepics/</loc>
   <lastmod>2021-12-05T10:43:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://fffmoosburg.github.io/en/impressum/</loc>
+  <loc>https://fffmoosburg.de/en/impressum/</loc>
   <lastmod>2021-12-05T10:43:15+00:00</lastmod>
   <priority>0.80</priority>
 </url>
