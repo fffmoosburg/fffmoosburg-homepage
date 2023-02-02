@@ -1,1 +1,5 @@
 fffmoosburg.github.io.code-workspace
+node_modules/
+OLD.BAK/
+runtailwindcss.bat
+tailwind.config.js
