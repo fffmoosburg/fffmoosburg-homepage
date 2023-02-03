@@ -1169,14 +1169,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-cyan-300 {
+.text-ffflinkhellblau {
   --tw-text-opacity: 1;
-  color: rgb(103 232 249 / var(--tw-text-opacity));
-}
-
-.text-red-600 {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+  color: rgb(135 242 255 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1515,16 +1510,6 @@ video {
 .hover\:text-fffhellgruen:hover {
   --tw-text-opacity: 1;
   color: rgb(29 166 74 / var(--tw-text-opacity));
-}
-
-.hover\:text-cyan-200:hover {
-  --tw-text-opacity: 1;
-  color: rgb(165 243 252 / var(--tw-text-opacity));
-}
-
-.hover\:text-red-600:hover {
-  --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
 }
 
 .hover\:text-red-500:hover {
