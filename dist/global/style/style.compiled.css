@@ -1517,6 +1517,11 @@ video {
   color: rgb(165 243 252 / var(--tw-text-opacity));
 }
 
+.hover\:text-red-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(220 38 38 / var(--tw-text-opacity));
+}
+
 .hover\:shadow-neumorphism-light-hov:hover {
   --tw-shadow: 2px 2px 5px #606264, -2px -2px 5px #ffffff;
   --tw-shadow-colored: 2px 2px 5px var(--tw-shadow-color), -2px -2px 5px var(--tw-shadow-color);
