@@ -598,24 +598,14 @@ video {
   margin-bottom: 1rem;
 }
 
-.my-percent6_25 {
-  margin-top: 6.25%;
-  margin-bottom: 6.25%;
+.mx-percent3_125 {
+  margin-left: 3.125%;
+  margin-right: 3.125%;
 }
 
 .my-auto {
   margin-top: auto;
   margin-bottom: auto;
-}
-
-.my-percent3_125 {
-  margin-top: 3.125%;
-  margin-bottom: 3.125%;
-}
-
-.mx-percent3_125 {
-  margin-left: 3.125%;
-  margin-right: 3.125%;
 }
 
 .-mr-2 {
