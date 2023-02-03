@@ -46,7 +46,7 @@
             <div
                 class="flex items-center justify-between text-fffdunkelgruen border-b-2 border-gray-100 py-6 mdlg:justify-start mdlg:space-x-10">
                 <div class="flex justify-start lg:w-0 lg:flex-1">
-                    <a href="#">
+                    <a href="#" aria-label="Zurück zur Homepage">
                         <span class="sr-only">Fridays For Future Moosburg</span>
                         <picture class="h-20 w-20 sm:h-18 sm:w-18 md:h-14 md:w-14 lg:h-16 lg:w-16">
                             <source srcset="./dist/global/logo/dunkelgruen/160x.webp" type="image/webp">
@@ -71,15 +71,16 @@
                 </div>
                 <nav class="hidden space-x-10 mdlg:flex">
 
-                    <a href="#home" class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen">Home</a>
-                    <a href="#ueber-uns"
-                        class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen">Über&nbsp;Uns</a>
+                    <a href="#home" class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen"
+                        aria-label="Home">Home</a>
+                    <a href="#ueber-uns" class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen"
+                        aria-label="Über Uns">Über&nbsp;Uns</a>
 
                     <div class="relative">
                         <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
                         <button id="forderungen-dropdown-button" type="button"
                             class="text-fffdunkelgruen group inline-flex items-center rounded-md bg-slate-100 text-lg font-medium hover:text-fffhellgruen focus:outline-none focus:ring-2 focus:ring-fffhellgruen focus:ring-offset-2 inactive"
-                            aria-expanded="false">
+                            aria-expanded="false" aria-label="Forderungen Menü Ausklappen">
                             <span>Forderungen</span>
                             <!--
                                       Heroicon name: mini/chevron-down
@@ -110,7 +111,8 @@
                             <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                                 <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                                     <a href="#forderungen-de"
-                                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                                        aria-label="Bundes Forderungen">
                                         <!-- Heroicon name: outline/chart-bar -->
                                         <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -127,7 +129,8 @@
                                     </a>
 
                                     <a href="#forderungen-lokal"
-                                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                                        class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                                        aria-label="Lokale Forderungen">
                                         <!-- Heroicon name: outline/cursor-arrow-rays -->
                                         <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -148,7 +151,8 @@
                                 <div class="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
                                     <div class="flow-root">
                                         <a href="https://fridaysforfuture.de/forderungen/"
-                                            class="-m-3 flex items-center rounded-md p-3 text-lg font-medium text-gray-900 hover:bg-gray-100">
+                                            class="-m-3 flex items-center rounded-md p-3 text-lg font-medium text-gray-900 hover:bg-gray-100"
+                                            aria-label="Zu den Forderungen auf der Bundesweiten Webseite">
                                             <!-- Heroicon name: outline/play -->
                                             <svg class="h-6 w-6 flex-shrink-0 text-gray-400"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -163,7 +167,8 @@
 
                                     <div class="flow-root">
                                         <a href="https://fridaysforfuture.de/studie/"
-                                            class="-m-3 flex items-center rounded-md p-3 text-lg font-medium text-gray-900 hover:bg-gray-100">
+                                            class="-m-3 flex items-center rounded-md p-3 text-lg font-medium text-gray-900 hover:bg-gray-100"
+                                            aria-label="Zur Machbarkeitsstudie von Fridays For Future Deutschland">
                                             <!-- Heroicon name: outline/phone -->
                                             <svg class="h-6 w-6 flex-shrink-0 text-gray-400"
                                                 xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -181,15 +186,15 @@
                     </div>
 
                     <a href="#aktionen"
-                        class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen">Aktionen</a>
+                        class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen" aria-label="Aktionen">Aktionen</a>
 
                     <a href="#kontakt"
-                        class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen">Kontakt</a>
+                        class="text-lg font-medium text-fffdunkelgruen hover:text-fffhellgruen" aria-label="Kontakt">Kontakt</a>
                 </nav>
                 <div class="hidden items-center justify-end mdlg:flex mdlg:flex-1 lg:w-0">
 
                     <a href="./sharepics/"
-                        class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-fffrot px-4 py-2 text-base font-bold text-white hover:bg-red-700 shadow-neumorphism-light hover:shadow-neumorphism-light-hov">Sharepics!</a>
+                        class="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-fffrot px-4 py-2 text-base font-bold text-white hover:bg-red-700 shadow-neumorphism-light hover:shadow-neumorphism-light-hov"  aria-label="Zur sharepic Galerie">Sharepics!</a>
                 </div>
             </div>
         </div>
@@ -230,7 +235,7 @@
                     </div>
                     <div class="mt-6">
                         <nav class="grid gap-y-8">
-                            <a href="#home" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                            <a href="#home" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" aria-label="Home">
                                 <!-- Heroicon name: outline/chart-bar -->
                                 <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -242,7 +247,7 @@
                                 <span class="ml-3 text-base font-medium text-gray-900">Home</span>
                             </a>
 
-                            <a href="#ueber-uns" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                            <a href="#ueber-uns" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" aria-label="Über Uns">
                                 <!-- Heroicon name: outline/cursor-arrow-rays -->
                                 <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -254,7 +259,7 @@
                                 <span class="ml-3 text-base font-medium text-gray-900">Über&nbsp;Uns</span>
                             </a>
 
-                            <a href="#forderungen" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                            <a href="#forderungen" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" aria-label="Forderungen">
                                 <!-- Heroicon name: outline/shield-check -->
                                 <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -265,7 +270,7 @@
                                 <span class="ml-3 text-base font-medium text-gray-900">Forderungen</span>
                             </a>
 
-                            <a href="#aktionen" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                            <a href="#aktionen" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" aria-label="Aktionen">
                                 <!-- Heroicon name: outline/squares-2x2 -->
                                 <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -276,7 +281,7 @@
                                 <span class="ml-3 text-base font-medium text-gray-900">Aktionen</span>
                             </a>
 
-                            <a href="#kontakt" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50">
+                            <a href="#kontakt" class="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50" aria-label="Kontakt">
                                 <!-- Heroicon name: outline/arrow-path -->
                                 <svg class="h-6 w-6 flex-shrink-0 text-fffdunkelgruen"
                                     xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -295,7 +300,7 @@
                     </div>
                     <div>
                         <a href="./sharepics/"
-                            class="flex w-full items-center justify-center rounded-md border border-transparent bg-fffrot px-4 py-2 text-base font-bold text-white shadow-sm hover:bg-indigo-700">Sharepics!</a>
+                            class="flex w-full items-center justify-center rounded-md border border-transparent bg-fffrot px-4 py-2 text-base font-bold text-white shadow-sm hover:bg-indigo-700" aria-label="Zur Sharepic Galerie">Sharepics!</a>
 
                     </div>
                 </div>
@@ -322,8 +327,8 @@
             <p>Nach einer längeren Pause 2022 beginnt nun der Prozess die Ortsgruppe wiederzubeleben und wieder Aktionen
                 durchzuführen.<br /><span class="font-semibold">Wenn <span>du</span> mithelfen willst oder neugierig
                     bist, dann melde dich
-                    gerne <a class="text-red-600 hover:text-red-500 underline font-bold"
-                        href="#kontakt">hier.</a></span></p>
+                    gerne <a class="text-ffflinkhellblau hover:text-red-500 underline font-bold"
+                        href="#kontakt" aria-label="hier. Link zu den Kontaktmöglichkeiten">hier.</a></span></p>
         </div>
     </section>
 
@@ -420,11 +425,11 @@
         <div
             class="flex flex-wrap lg:flex-nowrap columns-3 lg:columns-3 my-2 text-white text-center items-center content-center">
             <p class="w-full my-4">
-                <a href="./impressum/">Impressum</a>
+                <a href="./impressum/" aria-label="Link zum Impressum">Impressum</a>
             </p>
             <p class="w-full my-4">&copy;&nbsp;2023, Fridays&nbsp;For&nbsp;Future&nbsp;Moosburg</p>
             <p class="w-full my-4">
-                <a href="./datenschutz/">Datenschutz<ap>
+                <a href="./datenschutz/" aria-label="Link zur Datenschutzerklärung">Datenschutz<ap>
             </p>
         </div>
 
