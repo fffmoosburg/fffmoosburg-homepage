@@ -32,3 +32,7 @@ mobileMenuClose.addEventListener("click", () => {
         mobileMenu.classList.add("invisible");
     }
 });
+
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("./sw.js");
+};
