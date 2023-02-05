@@ -26,7 +26,7 @@ $user = 'k201040_fff_moosburg_testing';
 $password = 'k201040_fff_moosburg_testing';
 $dbname = 'k201040_fff_moosburg_testing';
 
-$db = new mysqli($host, $user, null, $dbname);
+$db = new mysqli($host, $user, $password, $dbname);
 if ($db->connect_errno > 0) {
     die('<h1>Fehler beim Verbinden: ' . $db->connect_error . "</h1>");
 }
