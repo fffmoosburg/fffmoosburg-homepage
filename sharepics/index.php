@@ -20,7 +20,47 @@
 </head>
 
 <body class="bg-slate-800 font-jost overflow-x-hidden">
+<?php
+$host = '10.35.47.248:3306';
+$user = 'k201040_fff_moosburg_testing';
+$password = 'k201040_fff_moosburg_testing';
+$dbname = 'k201040_fff_moosburg_testing';
 
+$db = new mysqli($host, $user, null, $dbname);
+if ($db->connect_errno > 0) {
+    die('<h1>Fehler beim Verbinden: ' . $db->connect_error . "</h1>");
+}
+
+$picture_amount = $db->query('SELECT `id` FROM `sharepics`')->num_rows;
+
+function getImageURL($passedID)
+{
+    global $db;
+    $queryImageURL = $db->query('SELECT `url` FROM `sharepics` WHERE `id`= ' . $passedID);
+    $imageURL = $queryImageURL->fetch_assoc();
+    $result = $imageURL['url'];
+    return $result;
+}
+
+function getThumbURL($passedID)
+{
+    global $db;
+    $queryThumbURL = $db->query('SELECT `thumb_url` FROM `sharepics` WHERE `id`= ' . $passedID);
+    $thumbURL = $queryThumbURL->fetch_assoc();
+    $result = $thumbURL['thumb_url'];
+    return $result;
+}
+
+function getMimeType($passedID)
+{
+    global $db;
+    $queryMIME = $db->query('SELECT `mime_type` FROM `sharepics` WHERE `id`= ' . $passedID);
+    $mimeType = $queryMIME->fetch_assoc();
+    $result = $mimeType['mime_type'];
+    return $result;
+
+}
+?>
     <div class="relative bg-slate-100 text-fffdunkelgruen">
         <div class="mx-auto max-w-7xl px-6">
             <div
@@ -295,7 +335,19 @@
         <p class="text-base">Willkommen, hier findest du alle Sharepics.<br />Die neuesten sind ganz oben links.</p>
         <div
             class="flex flex-row-reverse flex-wrap-reverse columns-1 lg:columns-3 mx-percent3_125 my-2 text-center items-center justify-center justify-content-center content-center">
-            <a class="w-percent25 text-3xl my-5 py-2 mx-percent3_125 text-center" href="./20.08/Seid_Bereit_20.08.jpg"
+            <?php
+            for ($i = 1; $i <= $picture_amount; $i++) {
+                echo "<a class=\"w-percent25 text-3xl my-5 py-2 mx-percent3_125 text-center\" href=\"" . getImageURL($i) . "\" download=\"\">
+                <picture class=\"w-full h-auto mx-auto my-auto\">
+                    <source srcset=\"" . getThumbURL($i) . "\" type=\"image/webp\">
+                    <source srcset=\"" . getImageURL($i) . "\" type=\"" . getMimeType($i) . "\">
+                    <img class=\"w-full h-auto mx-auto my-auto\" src=\"" . getImageURL($i) . "\" alt=\"Sharepic\">
+                </picture>
+            </a>";
+            }
+            ;
+            ?>
+            <!-- <a class="w-percent25 text-3xl my-5 py-2 mx-percent3_125 text-center" href="./20.08/Seid_Bereit_20.08.jpg"
                 download="">
                 <picture class="w-full h-auto mx-auto my-auto">
                     <source srcset="./20.08/Seid_Bereit_20.08.webp" type="image/webp">
@@ -310,7 +362,7 @@
                     <source srcset="./24.09/24.09_Viehmarkt.jpg" type="image/jpg">
                     <img class="w-full h-auto mx-auto my-auto" src="./24.09/24.09_Viehmarkt.jpg" alt="Sharepic">
                 </picture>
-            </a>
+            </a> -->
             <!--
                 VORLAGE:
 
